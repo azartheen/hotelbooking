@@ -1,0 +1,3938 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="author" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hotel Booking</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <link rel="alternate" type="application/rss+xml" title="Chalet WordPress Theme &raquo; Feed" href="/feed/">
+  <link rel="alternate" type="application/rss+xml" title="Chalet WordPress Theme &raquo; Comments Feed"
+    href="/comments/feed/">
+
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min_ver%3D5.2.2.css"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="contact-form-7-css"
+    href="wp-content/plugins/contact-form-7/includes/css/styles_ver%3D4.8.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nd_booking_style-css" href="wp-content/plugins/nd-booking/assets/css/style_ver%3D5.2.2.css"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="nd_options_style-css" href="wp-content/plugins/nd-shortcodes/css/style_ver%3D5.2.2.css"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="nd_options_font_family_h-css"
+    href="http://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C700&amp;ver=5.2.2" type="text/css" media="all">
+  <link rel="stylesheet" id="nd_options_font_family_p-css"
+    href="http://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C700&amp;ver=5.2.2" type="text/css" media="all">
+  <link rel="stylesheet" id="nd_options_font_family_third-css"
+    href="http://fonts.googleapis.com/css?family=Gilda+Display&amp;ver=5.2.2" type="text/css" media="all">
+  <link rel="stylesheet" id="nd_tds_style-css"
+    href="wp-content/plugins/nd-theme-demos-switcher/css/style_ver%3D5.2.2.css" type="text/css" media="all">
+  <link rel="stylesheet" id="rs-plugin-settings-css"
+    href="wp-content/plugins/revslider/public/assets/css/settings_ver%3D5.4.6.3.1.css" type="text/css" media="all">
+  <style id="rs-plugin-settings-inline-css" type="text/css">
+    #rs-demo-id {}
+  </style>
+  <link rel="stylesheet" id="nicdark-style-css" href="wp-content/themes/hotelbooking/style_ver%3D5.2.2.css"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="nicdark-fonts-css"
+    href="//fonts.googleapis.com/css?family=Gilda%2BDisplay%7CRoboto%3A300%2C400%2C700&amp;ver=1.0.0" type="text/css"
+    media="all">
+  <link rel="stylesheet" id="js_composer_front-css"
+    href="wp-content/uploads/sites/7/js_composer/js_composer_front_custom_ver%3D5.1.1.css" type="text/css" media="all">
+  <script type="text/javascript" src="wp-includes/js/jquery/jquery_ver%3D1.12.4-wp.js"></script>
+  <script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min_ver%3D1.4.1.js"></script>
+  <script type="text/javascript"
+    src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min_ver%3D5.4.6.3.1.js"></script>
+  <script type="text/javascript"
+    src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min_ver%3D5.4.6.3.1.js"></script>
+
+  <style type="text/css">
+    /*color_dark_1*/
+    .nd_booking_bg_greydark,
+    #nd_booking_slider_range .ui-slider-range,
+    #nd_booking_slider_range .ui-slider-handle,
+    .ui-tooltip.nd_booking_tooltip_jquery_content,
+    .ui-datepicker,
+    .ui-datepicker .ui-datepicker-prev span,
+    .ui-datepicker .ui-datepicker-next span {
+      background-color: #78635a;
+    }
+
+    #nd_booking_search_filter_options li p {
+      border-bottom: 2px solid #78635a;
+    }
+
+    #nd_booking_checkout_payment_tab_list li.ui-state-active {
+      border-bottom: 1px solid #78635a;
+    }
+
+    .nd_booking_border_1_solid_greydark_important {
+      border: 1px solid #78635a !important;
+    }
+
+    /*color_dark_2*/
+    .nd_booking_bg_greydark_2,
+    .ui-datepicker .ui-datepicker-header {
+      background-color: #715d55;
+    }
+
+    .nd_booking_bg_greydark_2_important {
+      background-color: #715d55 !important;
+    }
+
+    /*color_1*/
+    .nd_booking_bg_yellow,
+    .nd_booking_btn_pagination_active,
+    .ui-datepicker-today a {
+      background-color: #78635a;
+    }
+
+    .nd_booking_color_yellow_important {
+      color: #78635a !important;
+    }
+
+    /*color_2*/
+    .nd_booking_bg_red {
+      background-color: #715d55;
+    }
+  </style>
+
+
+
+
+  <!--START  for post-->
+  <style type="text/css">
+    /*sidebar*/
+    .nd_booking_sidebar .widget {
+      margin-bottom: 40px;
+    }
+
+    .nd_booking_sidebar .widget img,
+    .nd_booking_sidebar .widget select {
+      max-width: 100%;
+    }
+
+    .nd_booking_sidebar .widget h3 {
+      margin-bottom: 20px;
+      font-weight: bolder;
+    }
+
+    /*search*/
+    .nd_booking_sidebar .widget.widget_search input[type="text"] {
+      width: 100%;
+      font-weight: lighter;
+    }
+
+    .nd_booking_sidebar .widget.widget_search input[type="submit"] {
+      margin-top: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 11px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /*list*/
+    .nd_booking_sidebar .widget ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .nd_booking_sidebar .widget>ul>li {
+      padding: 10px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .nd_booking_sidebar .widget>ul>li:last-child {
+      padding-bottom: 0px;
+      border-bottom: 0px solid #f1f1f1;
+    }
+
+    .nd_booking_sidebar .widget ul li {
+      padding: 10px;
+    }
+
+    .nd_booking_sidebar .widget ul.children {
+      padding: 10px;
+    }
+
+    .nd_booking_sidebar .widget ul.children:last-child {
+      padding-bottom: 0px;
+    }
+
+    /*calendar*/
+    .nd_booking_sidebar .widget.widget_calendar table {
+      text-align: center;
+      background-color: #1c1c1c;
+      width: 100%;
+      border: 0px solid #f1f1f1;
+      line-height: 20px;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table th {
+      padding: 10px 5px;
+      font-size: 12px;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table td {
+      padding: 10px 5px;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table tbody td a {
+      color: #fff;
+      padding: 5px;
+      border-radius: 0px;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table tfoot td a {
+      color: #fff;
+      background-color: #715d55;
+      padding: 5px;
+      border-radius: 0px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table tfoot td {
+      padding-bottom: 20px;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table tfoot td#prev {
+      text-align: right;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table tfoot td#next {
+      text-align: left;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table caption {
+      font-size: 20px;
+      font-weight: bolder;
+      background-color: #151515;
+      padding: 20px;
+      border: 0px solid #f1f1f1;
+      border-bottom: 0px;
+    }
+
+
+    /*color calendar*/
+    .nd_booking_sidebar .widget.widget_calendar table thead {
+      color: #a3a3a3;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table tbody td a {
+      background-color: #715d55;
+    }
+
+    .nd_booking_sidebar .widget.widget_calendar table caption {
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /*menu*/
+    .nd_booking_sidebar .widget div ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .nd_booking_sidebar .widget div>ul>li {
+      padding: 10px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .nd_booking_sidebar .widget div>ul>li:last-child {
+      padding-bottom: 0px;
+      border-bottom: 0px solid #f1f1f1;
+    }
+
+    .nd_booking_sidebar .widget div ul li {
+      padding: 10px;
+    }
+
+    .nd_booking_sidebar .widget div ul.sub-menu {
+      padding: 10px;
+    }
+
+    .nd_booking_sidebar .widget div ul.sub-menu:last-child {
+      padding-bottom: 0px;
+    }
+
+    /*tag*/
+    .nd_booking_sidebar .widget.widget_tag_cloud a {
+      padding: 8px;
+      border: 1px solid #f1f1f1;
+      border-radius: 0px;
+      display: inline-block;
+      margin: 5px;
+      margin-left: 0px;
+      font-size: 12px !important;
+      line-height: 12px;
+    }
+  </style>
+  <!--END css for post-->
+
+  <style type="text/css">
+    /*START FONTS FAMILY*/
+    .nd_options_customizer_fonts .nd_options_first_font,
+    .nd_options_customizer_fonts h1,
+    .nd_options_customizer_fonts h2,
+    .nd_options_customizer_fonts h3,
+    .nd_options_customizer_fonts h4,
+    .nd_options_customizer_fonts h5,
+    .nd_options_customizer_fonts h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nd_options_customizer_fonts,
+    .nd_options_customizer_fonts .nd_options_second_font,
+    .nd_options_customizer_fonts p,
+    .nd_options_customizer_fonts a,
+    .nd_options_customizer_fonts select,
+    .nd_options_customizer_fonts textarea,
+    .nd_options_customizer_fonts label,
+    .nd_options_customizer_fonts input {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nd_options_customizer_fonts .nd_options_second_font_important {
+      font-family: 'Poppins', sans-serif !important;
+    }
+
+    .nd_options_customizer_fonts .nd_options_third_font {
+      font-family: 'Gilda Display', sans-serif;
+    }
+
+
+    /*START FONTS COLOR*/
+    .nd_options_customizer_fonts .nd_options_color_greydark,
+    .nd_options_customizer_fonts h1,
+    .nd_options_customizer_fonts h2,
+    .nd_options_customizer_fonts h3,
+    .nd_options_customizer_fonts h4,
+    .nd_options_customizer_fonts h5,
+    .nd_options_customizer_fonts h6 {
+      color: #727475;
+    }
+
+    .nd_options_customizer_fonts,
+    .nd_options_customizer_fonts .nd_options_color_grey,
+    .nd_options_customizer_fonts p,
+    .nd_options_customizer_fonts a,
+    .nd_options_customizer_fonts select,
+    .nd_options_customizer_fonts textarea,
+    .nd_options_customizer_fonts label,
+    .nd_options_customizer_fonts input {
+      color: #a3a3a3;
+    }
+
+    .nd_options_color_grey_important {
+      color: #a3a3a3 !important;
+    }
+
+
+    /*compatibility with plugin Learning*/
+    #nd_learning_calendar_single_course .ui-datepicker-title {
+      font-family: 'Poppins', sans-serif;
+      color: #727475;
+    }
+
+    #nd_learning_calendar_single_course .ui-datepicker-calendar th {
+      color: #727475;
+    }
+  </style>
+
+
+
+
+  <style type="text/css">
+    /*START FORMS STYLES*/
+    .nd_options_customizer_forms span.wpcf7-not-valid-tip,
+    .nd_options_customizer_forms .wpcf7-response-output.wpcf7-validation-errors {
+      background-color: #78635a;
+      border-width: 0px;
+      border-color: #78635a;
+      border-radius: 0px;
+      border-style: solid;
+      padding: 5px;
+      color: #ffffff;
+      margin: 0px;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .nd_options_customizer_forms .wpcf7-response-output.wpcf7-mail-sent-ok {
+      background-color: #78635a;
+      border-width: 0px;
+      border-color: #78635a;
+      border-radius: 0px;
+      border-style: solid;
+      padding: 5px;
+      color: #ffffff;
+      margin: 0px;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  </style>
+
+
+
+
+  <style type="text/css">
+    /*START FORMS STYLES*/
+    .nd_options_customizer_forms input[type="text"],
+    .nd_options_customizer_forms input[type="email"],
+    .nd_options_customizer_forms input[type="url"],
+    .nd_options_customizer_forms input[type="tel"],
+    .nd_options_customizer_forms input[type="number"],
+    .nd_options_customizer_forms input[type="date"],
+    .nd_options_customizer_forms input[type="file"],
+    .nd_options_customizer_forms input[type="password"],
+    .nd_options_customizer_forms select,
+    .nd_options_customizer_forms textarea,
+    .StripeElement {
+      background-color: #f9f9f9;
+      border-width: 1px;
+      border-color: #f1f1f1;
+      border-radius: 0px;
+      border-style: solid;
+      padding: 10px 20px;
+      -webkit-appearance: none;
+      color: #878787;
+
+    }
+
+
+    .nd_options_customizer_forms input[type="text"]::-webkit-input-placeholder,
+    .nd_options_customizer_forms input[type="email"]::-webkit-input-placeholder,
+    .nd_options_customizer_forms input[type="url"]::-webkit-input-placeholder,
+    .nd_options_customizer_forms input[type="tel"]::-webkit-input-placeholder,
+    .nd_options_customizer_forms input[type="password"]::-webkit-input-placeholder,
+    .nd_options_customizer_forms input[type="number"]::-webkit-input-placeholder,
+    .nd_options_customizer_forms textarea::-webkit-input-placeholder {
+      color: #878787;
+    }
+
+
+    .nd_options_customizer_forms select {
+      cursor: pointer;
+    }
+
+    .nd_options_customizer_forms select option {
+      padding: 10px 20px;
+    }
+  </style>
+
+
+
+
+  <style type="text/css">
+    /*START FORMS STYLES*/
+    .nd_options_customizer_forms input[type="submit"] {
+      background-color: #715d55;
+      border-width: 0px;
+      border-color: #715d55;
+      border-radius: 0px;
+      border-style: solid;
+      padding: 10px 20px;
+      -webkit-appearance: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+
+    }
+  </style>
+
+
+
+  <style type="text/css">
+    .nd_options_cursor_default_a>a {
+      cursor: default;
+    }
+
+    .nd_options_navigation_type .menu li.nd_options_hot_label>a:after {
+      content: "HOT";
+      float: right;
+      background-color: #78635a;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 3px 5px;
+    }
+
+    .nd_options_navigation_type .menu li.nd_options_best_label>a:after {
+      content: "BEST";
+      float: right;
+      background-color: #78635a;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 3px 5px;
+    }
+
+    .nd_options_navigation_type .menu li.nd_options_new_label>a:after {
+      content: "NEW";
+      float: right;
+      background-color: #78635a;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 3px 5px;
+    }
+
+    .nd_options_customizer_labels_color_new {
+      background-color: #78635a;
+    }
+  </style>
+
+
+  <!--START css-->
+  <style type="text/css">
+    .nd_options_navigation_search_content_form {}
+
+    .nd_options_navigation_search_content_form input[type="search"] {
+      background: none;
+      border: 0px;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    .nd_options_navigation_search_content_form input[type="search"]::-webkit-input-placeholder {
+      color: #fff;
+    }
+
+    .nd_options_navigation_search_content_form input[type="submit"] {
+      font-size: 25px;
+      line-height: 40px;
+      margin-left: 20px;
+    }
+  </style>
+  <!--END css-->
+
+
+
+
+
+  <!--START css-->
+  <style type="text/css">
+    .nd_options_navigation_4 div>ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+    }
+
+    .nd_options_navigation_4 div>ul>li {
+      display: inline-block;
+      padding: 0px;
+    }
+
+    .nd_options_navigation_4 div>ul>li:after {
+      content: "|";
+      display: inline-block;
+      margin: 0px 20px;
+      color: #f1f1f1;
+    }
+
+    .nd_options_navigation_4 div>ul>li:last-child:after {
+      content: "";
+      margin: 0px;
+    }
+
+    .nd_options_navigation_4 div li a {
+      color: #727475;
+      font-size: 13px;
+      line-height: 13px;
+      font-family: Poppins;
+      font-weight: lighter;
+      letter-spacing: 3px;
+    }
+
+    .nd_options_navigation_4 div>ul li:hover>ul.sub-menu {
+      display: block;
+    }
+
+    .nd_options_navigation_4 div>ul li>ul.sub-menu {
+      z-index: 999;
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: none;
+      margin-left: -20px;
+      padding-top: 16px;
+      width: 200px;
+    }
+
+    .nd_options_navigation_4 div>ul li>ul.sub-menu>li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #f1f1f1;
+      text-align: left;
+      background-color: #fff;
+      position: relative;
+      box-shadow: 0px 2px 5px #f1f1f1;
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .nd_options_navigation_4 div>ul li>ul.sub-menu>li:hover {
+      background-color: #f9f9f9;
+    }
+
+    .nd_options_navigation_4 div>ul li>ul.sub-menu>li:last-child {
+      border-bottom: 0px solid #000;
+    }
+
+    .nd_options_navigation_4 div>ul li>ul.sub-menu li a {
+      font-size: 12px;
+      color: #727475;
+      float: left;
+      width: 100%;
+    }
+
+    .nd_options_navigation_4 div>ul li>ul.sub-menu li>ul.sub-menu {
+      margin-left: 180px;
+      top: 0;
+      padding-top: 0;
+      padding-left: 20px;
+    }
+
+    /*responsive*/
+    .nd_options_navigation_4_sidebar div>ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .nd_options_navigation_4_sidebar div>ul>li {
+      display: inline-block;
+      width: 100%;
+      padding: 0px 0px 20px 0px !important;
+      background-color: transparent;
+    }
+
+    .nd_options_navigation_4_sidebar div li a {
+      font-family: Poppins;
+    }
+
+    .nd_options_navigation_4_sidebar div li>a {
+      padding: 10px 0px;
+      display: inline-block;
+      font-size: 24px;
+      font-family: Poppins;
+      text-transform: lowercase;
+      color: #fff;
+    }
+
+    .nd_options_navigation_4_sidebar div li>a::first-letter {
+      text-transform: uppercase;
+    }
+
+    .nd_options_navigation_4_sidebar div>ul li>ul.sub-menu {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .nd_options_navigation_4_sidebar div>ul li>ul.sub-menu>li {
+      padding: 0px 20px;
+      text-align: left;
+    }
+
+    .nd_options_navigation_4_sidebar div>ul li>ul.sub-menu li a {
+      font-size: 14px;
+    }
+
+    /*top header*/
+    .nd_options_navigation_top_header_4 {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .nd_options_navigation_top_header_4>ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .nd_options_navigation_top_header_4>ul>li {
+      display: inline-block;
+    }
+
+    .nd_options_navigation_top_header_4>ul>li:after {
+      content: "|";
+      display: inline-block;
+      margin: 0px 15px;
+      font-size: 13px;
+    }
+
+    .nd_options_navigation_top_header_4>ul>li:last-child:after {
+      content: "";
+      margin: 0px;
+    }
+
+    .nd_options_navigation_top_header_4 li a {
+      font-size: 13px;
+    }
+
+    .nd_options_navigation_top_header_4>ul li:hover>ul.nd_options_sub_menu {
+      display: block;
+    }
+
+    .nd_options_navigation_top_header_4>ul li>ul.nd_options_sub_menu {
+      padding: 10px 0px 0px 15px;
+      position: absolute;
+      margin: 0px;
+      list-style: none;
+      display: none;
+      z-index: 9;
+    }
+
+    .nd_options_navigation_top_header_4>ul li>ul.nd_options_sub_menu>li {
+      padding: 7px 15px;
+      font-size: 13px;
+      border-bottom: 1px solid #595959;
+      background-color: #444444;
+    }
+
+    .nd_options_navigation_top_header_4>ul li>ul.nd_options_sub_menu>li:last-child {
+      border-bottom: 0px solid #000;
+    }
+
+    #nd_options_navigation_top_header_4_left div:last-child div a img {
+      margin-right: 0px;
+    }
+
+    #nd_options_navigation_top_header_4_right div:last-child div a img {
+      margin-left: 0px;
+    }
+
+    /*arrow for item has children*/
+    .nd_options_navigation_4 .menu ul.sub-menu li.menu-item-has-children>a:after {
+      content: "";
+      float: right;
+      border-style: solid;
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent #727475;
+      margin-top: 3px;
+    }
+
+    /*search*/
+    #nd_options_container_search_icon_navigation {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    /*labels*/
+    .nd_options_navigation_4 .menu li.nd_options_new_label>a:after {
+      border-radius: 15px;
+      padding: 3px 8px;
+      letter-spacing: 0px;
+    }
+
+    .nd_options_navigation_4 .menu li.nd_options_hot_label>a:after {
+      border-radius: 15px;
+      padding: 3px 8px;
+      letter-spacing: 0px;
+    }
+
+    .nd_options_navigation_4 .menu li.nd_options_best_label>a:after {
+      border-radius: 15px;
+      padding: 3px 8px;
+      letter-spacing: 0px;
+    }
+  </style>
+  <!--END css-->
+
+
+
+
+
+
+  <!--START  for post-->
+  <style type="text/css">
+    /*sidebar*/
+    .wpb_widgetised_column .widget {
+      margin-bottom: 40px;
+    }
+
+    .wpb_widgetised_column .widget img,
+    .wpb_widgetised_column .widget select {
+      max-width: 100%;
+    }
+
+    .wpb_widgetised_column .widget h3 {
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    /*search*/
+    .wpb_widgetised_column .widget.widget_search input[type="text"] {
+      width: 100%;
+    }
+
+    .wpb_widgetised_column .widget.widget_search input[type="submit"] {
+      margin-top: 20px;
+    }
+
+    /*list*/
+    .wpb_widgetised_column .widget ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .wpb_widgetised_column .widget>ul>li {
+      padding: 10px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .wpb_widgetised_column .widget>ul>li:last-child {
+      padding-bottom: 0px;
+      border-bottom: 0px solid #f1f1f1;
+    }
+
+    .wpb_widgetised_column .widget ul li {
+      padding: 10px;
+    }
+
+    .wpb_widgetised_column .widget ul.children {
+      padding: 10px;
+    }
+
+    .wpb_widgetised_column .widget ul.children:last-child {
+      padding-bottom: 0px;
+    }
+
+    /*calendar*/
+    .wpb_widgetised_column .widget.widget_calendar table {
+      text-align: center;
+      background-color: #fff;
+      width: 100%;
+      border: 1px solid #f1f1f1;
+      line-height: 20px;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table th {
+      padding: 10px 5px;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table td {
+      padding: 10px 5px;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table tbody td a {
+      color: #fff;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td a {
+      color: #fff;
+      background-color: #444444;
+      padding: 5px;
+      border-radius: 15px;
+      font-size: 13px;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td {
+      padding-bottom: 20px;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td#prev {
+      text-align: right;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td#next {
+      text-align: left;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table caption {
+      font-size: 20px;
+      font-weight: bolder;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #f1f1f1;
+      border-bottom: 0px;
+    }
+
+    /*color calendar*/
+    .wpb_widgetised_column .widget.widget_calendar table thead {
+      color: #727475;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table tbody td a {
+      background-color: #715d55;
+    }
+
+    .wpb_widgetised_column .widget.widget_calendar table caption {
+      color: #727475;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /*menu*/
+    .wpb_widgetised_column .widget div ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .wpb_widgetised_column .widget div>ul>li {
+      padding: 10px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .wpb_widgetised_column .widget div>ul>li:last-child {
+      padding-bottom: 0px;
+      border-bottom: 0px solid #f1f1f1;
+    }
+
+    .wpb_widgetised_column .widget div ul li {
+      padding: 10px;
+    }
+
+    .wpb_widgetised_column .widget div ul.sub-menu {
+      padding: 10px;
+    }
+
+    .wpb_widgetised_column .widget div ul.sub-menu:last-child {
+      padding-bottom: 0px;
+    }
+
+    /*tag*/
+    .wpb_widgetised_column .widget.widget_tag_cloud a {
+      padding: 5px 10px;
+      border: 1px solid #f1f1f1;
+      border-radius: 15px;
+      display: inline-block;
+      margin: 5px;
+      margin-left: 0px;
+      font-size: 13px !important;
+      line-height: 20px;
+    }
+  </style>
+  <!--END css for post-->
+
+
+
+
+
+  <style type="text/css">
+    .nd_tds_background_color_1 {
+      background-color: #78635a;
+    }
+
+    .nd_tds_background_color_2 {
+      background-color: #78635a;
+    }
+
+    .nd_tds_background_color_3 {
+      background-color: #564a44;
+    }
+  </style>
+
+
+  <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+  <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+  <meta name="generator"
+    content="Powered by Slider Revolution 5.4.6.3.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+  <link rel="icon" href="wp-content/uploads/sites/7/2017/09/favicon.jpg" sizes="32x32">
+  <link rel="icon" href="wp-content/uploads/sites/7/2017/09/favicon.jpg" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="wp-content/uploads/sites/7/2017/09/favicon.jpg">
+  <meta name="msapplication-TileImage" content="/wp-content/uploads/sites/7/2017/09/favicon.jpg">
+  <script type="text/javascript">function setREVStartSize(e) {
+      try {
+        var i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
+        if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) { f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e) }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) { var u = (e.c.width(), jQuery(window).height()); if (void 0 != e.fullScreenOffsetContainer) { var c = e.fullScreenOffsetContainer.split(","); if (c) jQuery.each(c, function (e, i) { u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0)) } f = u } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight); e.c.closest(".rev_slider_wrapper").css({ height: f })
+      } catch (d) { console.log("Failure at Presize of Slider:" + d) }
+    };</script>
+  <style type="text/css" id="wp-custom-css">
+    /*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+    /*demo label*/
+    .nd_options_navigation_type .menu li.nd_options_demo_label>a:after {
+      content: "DEMO";
+      float: right;
+      background-color: #78635a;
+      border-radius: 0px;
+      color: #fff;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 3px 5px;
+    }
+
+    /*GENERAL*/
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: lighter;
+    }
+
+    body {
+      letter-spacing: 0px;
+    }
+
+    /*NAVIGATION*/
+    .nd_options_navigation_4 div>ul li>ul.sub-menu li a {
+      letter-spacing: 2px;
+    }
+
+    /*TOP HEADER*/
+    #nd_options_navigation_4_top_header {
+      background-image: url(wp-content/uploads/sites/7/2017/09/parallax6.jpg) !important;
+      background-repeat: no-repeat;
+      background-position: 0px -300px;
+      background-size: cover;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 1199px) {
+      #nd_options_navigation_4_top_header {
+        background-image: none !important;
+      }
+    }
+
+    /*HEADER BTN*/
+    .nd_options_book_now_btn {
+      background-color: #78635a;
+      border-radius: 25px
+    }
+
+    .nd_options_book_now_btn a {
+      color: #fff !important;
+      text-transform: uppercase;
+      font-size: 11px !important;
+      font-weight: bold;
+      padding: 0px 15px;
+      letter-spacing: 2px;
+      border-bottom-width: 0px !important;
+    }
+
+    .nd_options_navigation_type .menu li.nd_options_best_label>a:after {
+      border-radius: 0px !important;
+    }
+
+    .nd_options_navigation_4_sidebar_content .menu .nd_options_book_now_btn a {
+      font-size: 24px !important;
+      font-weight: 100;
+    }
+
+    /*FOOTER*/
+    #nd_options_footer_4 .wpb_widgetised_column .widget h3,
+    #nd_options_footer_4 .wpb_widgetised_column .widget {
+      margin-bottom: 0px;
+    }
+
+    #wpcf7-f253-o1 .wpcf7-validation-errors {
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #nd_options_footer_4_copyright .nd_options_container {
+      border-top-width: 0px !important;
+    }
+
+
+    /*SINGLE ROOM CALENDAR*/
+    #nd_booking_single_cpt_1_calendar_checkin h1,
+    #nd_booking_single_cpt_1_calendar_checkin h6,
+    #nd_booking_single_cpt_1_calendar_checkout h1,
+    #nd_booking_single_cpt_1_calendar_checkout h6,
+    #nd_booking_single_cpt_1_calendar_guests h1,
+    #nd_booking_single_cpt_1_calendar_nights h1 {
+      color: #fff !important;
+    }
+
+    /*CALENDAR PICKER*/
+    .ui-datepicker-prev span,
+    .ui-datepicker-next span,
+    .ui-datepicker-title,
+    .ui-datepicker-calendar thead th span {
+      font-family: 'Poppins' !important;
+      color: #fff !important;
+    }
+
+    .ui-datepicker-calendar tbody td span {
+      font-family: 'Poppins' !important;
+    }
+
+    /*SIDEBAR WIDGET CALENDAR*/
+    .nd_options_sidebar .widget.widget_calendar table caption {
+      background-color: #715e55 !important;
+    }
+
+    .nd_options_sidebar .widget.widget_calendar table {
+      text-align: center;
+      background-color: #78635b !important;
+    }
+
+    .nd_options_sidebar .widget.widget_calendar table thead {
+      color: #fff !important;
+    }
+
+    /*SINGLE POST*/
+    #nd_options_comments h3 strong,
+    #nd_options_comments .comment-author cite {
+      font-weight: normal;
+    }
+  </style>
+  <style type="text/css" data-type="vc_custom-css">
+    .nd_options_pg_home_5 .nd_options_section.nd_options_height_20 {
+      height: 15px !important;
+    }
+
+    .nd_options_pg_home_5 a {
+      border-radius: 0px;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 8px 20px;
+      font-family: 'Roboto' !important;
+    }
+
+    .nd_options_pg_home_5 h3 strong {
+      font-weight: normal !important;
+    }
+
+    .nd_options_home_5_service strong {
+      font-weight: normal !important;
+    }
+
+    .nd_options_home_5_form h6 {
+      border-radius: 0px;
+      padding: 5px 10px;
+      font-size: 11px;
+    }
+
+    .nd_options_home_5_form h1 strong {
+      font-weight: normal;
+    }
+
+    .nd_options_home_5_countdown .nd_options_border_radius_3 {
+      border-radius: 0px !important;
+      font-size: 11px;
+      padding: 5px 10px;
+      font-family: 'Roboto';
+    }
+
+    /*SEARCH COMPONENTS*/
+    .nd_booking_home_5_search_component #nd_booking_date_number_from_front,
+    .nd_booking_home_5_search_component #nd_booking_date_number_to_front,
+    .nd_booking_home_5_search_component .nd_booking_guests_number {
+      font-weight: normal;
+    }
+
+    .nd_booking_home_5_search_component input[type='submit'] {
+      background-image: url(wp-content/uploads/sites/7/2017/09/parallax8.jpg);
+      background-size: 1700px;
+      background-position: right;
+    }
+  </style>
+  <style type="text/css" data-type="vc_shortcodes-custom-css">
+    .vc_custom_1470751334579 {
+      border-left-width: 0px !important;
+    }
+
+    .vc_custom_1504107772390 {
+      margin-top: 70px !important;
+    }
+
+    .vc_custom_1504709246448 {
+      margin-top: 55px !important;
+      padding-top: 90px !important;
+      padding-bottom: 90px !important;
+    }
+
+    .vc_custom_1505901833458 {
+      border-bottom-width: 1px !important;
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+      background-color: #ffffff !important;
+      border-bottom-color: #f1f1f1 !important;
+      border-bottom-style: solid !important;
+    }
+
+    .vc_custom_1504107813541 {
+      margin-top: 70px !important;
+    }
+
+    .vc_custom_1504709253276 {
+      margin-top: 55px !important;
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+    }
+
+    .vc_custom_1468511468322 {
+      margin-top: 0px !important;
+      margin-right: 0px !important;
+      margin-bottom: 0px !important;
+      margin-left: 0px !important;
+      padding-top: 0px !important;
+      padding-right: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 0px !important;
+    }
+
+    .vc_custom_1505899416916 {
+      margin-top: 0px !important;
+      margin-right: 0px !important;
+      margin-bottom: 0px !important;
+      margin-left: 0px !important;
+      padding-top: 39px !important;
+      padding-right: 40px !important;
+      padding-bottom: 38px !important;
+      padding-left: 40px !important;
+      background-color: #715d55 !important;
+    }
+
+    .vc_custom_1469026316155 {
+      padding-top: 23px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .vc_custom_1499939841347 {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+
+    .vc_custom_1499939848725 {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+
+    .vc_custom_1467206505540 {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+
+    .vc_custom_1467206512132 {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+
+    .vc_custom_1467206621506 {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      padding-top: 0px !important;
+    }
+
+    .vc_custom_1467206625527 {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      padding-top: 0px !important;
+    }
+
+    .vc_custom_1467206629924 {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      padding-top: 0px !important;
+    }
+
+    .vc_custom_1467619684642 {
+      padding-top: 0px !important;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+
+    .vc_custom_1467271134818 {
+      padding: 10px !important;
+    }
+
+    .vc_custom_1467271143019 {
+      padding: 10px !important;
+    }
+
+    .vc_custom_1467271150084 {
+      padding: 10px !important;
+    }
+
+    .vc_custom_1467271159725 {
+      padding: 10px !important;
+    }
+
+    .vc_custom_1467271168220 {
+      padding: 10px !important;
+    }
+
+    .vc_custom_1467271192396 {
+      padding: 10px !important;
+    }
+  </style><noscript>
+    <style type="text/css">
+      .wpb_animate_when_almost_visible {
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body id="start_nicdark_framework"
+  class="home page-template-default page page-id-895 nd_options_customizer_fonts nd_options_customizer_forms wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+
+  <!--START theme-->
+  <div class="nicdark_site nicdark_bg_white nicdark_front_page ">
+
+
+
+    <div id="nd_options_site_filter"></div>
+
+
+    <!--START js-->
+    <script type="text/javascript">
+      //<![CDATA[
+
+      jQuery(document).ready(function () {
+
+        //START
+        jQuery(function ($) {
+
+          //OPEN sidebar content ( navigation 4 )
+          $('.nd_options_open_navigation_4_sidebar_content,.nd_options_open_navigation_3_sidebar_content,.nd_options_open_navigation_4_sidebar_content,.nd_options_open_navigation_5_sidebar_content').on("click", function (event) {
+            $('.nd_options_navigation_4_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
+              'right': '0px',
+            });
+          });
+          //CLOSE	sidebar content ( navigation 4 )
+          $('.nd_options_close_navigation_4_sidebar_content,.nd_options_close_navigation_3_sidebar_content,.nd_options_close_navigation_4_sidebar_content,.nd_options_close_navigation_5_sidebar_content').on("click", function (event) {
+            $('.nd_options_navigation_4_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
+              'right': '-300px'
+            });
+          });
+          ///////////
+
+
+        });
+        //END
+
+      });
+
+//]]>
+    </script>
+    <!--END js-->
+
+
+
+
+
+
+
+
+
+
+    <!--START menu responsive-->
+    <div style="background-color: #78635a ;"
+      class="nd_options_navigation_4_sidebar_content nd_options_padding_40 nd_options_box_sizing_border_box nd_options_overflow_hidden nd_options_overflow_y_auto nd_options_transition_all_08_ease nd_options_height_100_percentage nd_options_position_fixed nd_options_width_300 nd_options_right_300_negative nd_options_z_index_999">
+
+      <img alt width="25"
+        class="nd_options_close_navigation_4_sidebar_content nd_options_cursor_pointer nd_options_right_20 nd_options_top_20 nd_options_position_absolute"
+        src="wp-content/plugins/nd-shortcodes/addons/customizer/header/header-4/img/icon-close-white.svg">
+
+      <div class="nd_options_navigation_4_sidebar">
+        <div class="menu-main-menu-container">
+          <ul id="menu-main-menu" class="menu">
+            <li id="menu-item-1226"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-895 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1226">
+              <a href aria-current="page">HOME</a>
+              <ul class="sub-menu">
+                <li id="menu-item-1502"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-895 current_page_item menu-item-1502">
+                  <a href aria-current="page">Home 1</a></li>
+                <li id="menu-item-1505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505">
+                  <a href="home-2/">Home 2</a></li>
+                <li id="menu-item-1504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1504">
+                  <a href="home-3/">Home 3</a></li>
+                <li id="menu-item-1503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503">
+                  <a href="home-4/">Home 4</a></li>
+                <li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506">
+                  <a href="home-1/">Home 5</a></li>
+                <li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501">
+                  <a href="home-6/">Home 6</a></li>
+                <li id="menu-item-1536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1536">
+                  <a href="home-7/">Home 7</a></li>
+                <li id="menu-item-1511"
+                  class="nd_options_demo_label menu-item menu-item-type-custom menu-item-object-custom menu-item-1511">
+                  <a target="_blank" rel="noopener noreferrer"
+                    href="http://www.nicdarkthemes.com/themes/hotel/wp/demo/multilingual/">Multilingual</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-1203"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1203"><a
+                href="search/">ROOMS</a>
+              <ul class="sub-menu">
+                <li id="menu-item-1236"
+                  class="nd_options_best_label menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_1 menu-item-1236">
+                  <a href="rooms/small-room/">Room Gallery</a></li>
+                <li id="menu-item-1197"
+                  class="menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_1 menu-item-1197"><a
+                    href="rooms/room-with-view/">Room Video</a></li>
+                <li id="menu-item-1198"
+                  class="menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_1 menu-item-1198"><a
+                    href="rooms/apartment/">Room Default</a></li>
+                <li id="menu-item-1211"
+                  class="menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_4 menu-item-1211"><a
+                    href="branches/hotel-london/">Single Branch</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-1209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1209"><a
+                href="about-us/">ABOUT US</a></li>
+            <li id="menu-item-1196"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1196"><a
+                href="#">PAGES</a>
+              <ul class="sub-menu">
+                <li id="menu-item-1212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1212">
+                  <a href="around-hotel/">Around Us</a></li>
+                <li id="menu-item-1210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1210">
+                  <a href="terms-and-conditions/">Terms &#038; Conditions</a></li>
+                <li id="menu-item-1237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1237">
+                  <a href="our-services/">Services</a></li>
+                <li id="menu-item-1215"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1215">
+                  <a href="contact/">Contact</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-1216"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1216"><a
+                        href="contact/">Contact 1</a></li>
+                    <li id="menu-item-1217"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a
+                        href="contact-2/">Contact 2</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-1218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1218">
+                  <a target="_blank" rel="noopener noreferrer" href="coming-soon/">Coming Soon</a></li>
+                <li id="menu-item-1219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219">
+                  <a href="restaurant/">Restaurant</a></li>
+                <li id="menu-item-1223"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1223">
+                  <a href="about-us/">About Us</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-1224"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1224"><a
+                        href="about-us/">About Us 1</a></li>
+                    <li id="menu-item-1221"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1221"><a
+                        href="about-us-2/">About Us 2</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-1220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1220">
+                  <a href="promotions/">Promotions</a></li>
+                <li id="menu-item-1222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1222">
+                  <a href="testimonials/">Testimonials</a></li>
+                <li id="menu-item-1231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1231">
+                  <a href="gallery/">Gallery</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-1202"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1202"><a
+                href="our-news/">NEWS</a>
+              <ul class="sub-menu">
+                <li id="menu-item-1208"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1208">
+                  <a href="our-news/">Archive</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-1235"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a
+                        href="our-news/">Full Width</a></li>
+                    <li id="menu-item-1234"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a
+                        href="our-news-right-sidebar/">Right Sidebar</a></li>
+                    <li id="menu-item-1233"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a
+                        href="our-news-left-sidebar/">Left Sidebar</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-1204"
+                  class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1204">
+                  <a href="new-website-online/">Single Post</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-1205"
+                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1205"><a
+                        href="new-website-online/">Right Sidebar</a></li>
+                    <li id="menu-item-1206"
+                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1206"><a
+                        href="around-us/">Left Sidebar</a></li>
+                    <li id="menu-item-1207"
+                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1207"><a
+                        href="daily-walk/">Full Width</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li id="menu-item-1201"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1201"><a
+                href="contact/">CONTACT</a>
+              <ul class="sub-menu">
+                <li id="menu-item-1213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1213">
+                  <a href="contact/">Contact 1</a></li>
+                <li id="menu-item-1214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1214">
+                  <a href="contact-2/">Contact 2</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-1232"
+              class="nd_options_book_now_btn menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a
+                href="search/">BOOK NOW</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!--END menu responsive-->
+
+
+
+
+
+    <!--start TOP header-->
+    <div class="nd_options_section">
+
+      <div id="nd_options_navigation_4_top_header" style="background-color: #78635a ;" class="nd_options_section">
+
+        <!--start nd_options_container-->
+        <div class="nd_options_container nd_options_clearfix">
+
+          <div style="color: #a3a3a3 ;"
+            class="nd_options_grid_6 nd_options_padding_botttom_10 nd_options_padding_bottom_0_responsive nd_options_padding_top_10 nd_options_text_align_center_responsive">
+            <div id="nd_options_navigation_top_header_4_left"
+              class="nd_options_navigation_top_header_4 nd_options_display_inline_block_responsive">
+
+
+              <div style="margin:;"
+                class=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href><img alt width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/world-white.svg"></a>
+                </div>
+
+
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a style="color:#ffffff;" class="nd_options_margin_right_20 nd_options__font " href>LANGUAGES</a>
+                </div>
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_left">
+
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a style="color:#ffffff;" class="nd_options_margin_right_20 nd_options__font " href>EN</a>
+                </div>
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_left">
+
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a style="color:#ffffff;" class="nd_options_margin_right_20 nd_options__font " href>ES</a>
+                </div>
+
+
+              </div>
+
+
+
+              <div style="margin:;"
+                class=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href><img alt width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/share-white.svg"></a>
+                </div>
+
+
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a style="color:#ffffff;" class="nd_options_margin_right_20 nd_options__font " href>OUR SOCIAL</a>
+                </div>
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_left">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href><img alt width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/facebook-white.svg"></a>
+                </div>
+
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_left">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href><img alt width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/twitter-white.svg"></a>
+                </div>
+
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_left">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href><img alt width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/linkedin-white.svg"></a>
+                </div>
+
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_left">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href><img alt width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/pinterest-white.svg"></a>
+                </div>
+
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div style="color: #a3a3a3 ;"
+            class="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10">
+            <div id="nd_options_navigation_top_header_4_right"
+              class="nd_options_navigation_top_header_4 nd_options_display_inline_block_responsive">
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_right">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href="my-account/"><img alt width="15" height="15"
+                      class="nd_options_margin_left_20 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
+                </div>
+
+
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a style="color:#ffffff;" class="nd_options_margin_left_10 nd_options__font " href="my-account/">LOG
+                    IN</a>
+                </div>
+
+
+              </div>
+
+
+
+              <div style="margin:;" class="  nd_options_display_table nd_options_float_right">
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a href="my-account/"><img alt width="15" height="15"
+                      class="nd_options_margin_left_20 nd_options_float_left"
+                      src="wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
+                </div>
+
+
+
+
+                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                  <a style="color:#ffffff;" class="nd_options_margin_left_10 nd_options__font "
+                    href="my-account/">REGISTER</a>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+        <!--end container-->
+
+      </div>
+
+    </div>
+    <!--END TOP header-->
+
+
+
+    <!--START LOGO-->
+    <div id="nd_options_navigation_4_middle_header" style="background-color: #ffffff ;"
+      class="nd_options_section nd_options_display_none_all_responsive">
+
+      <div class="nd_options_container nd_options_clearfix">
+
+        <div style="height: 10px;" class="nd_options_section"></div>
+
+        <div class="nd_options_grid_12 nd_options_display_none_all_responsive nd_options_text_align_center">
+
+          <a href=""><img style="margin-top:27px;" alt class width="170"
+              src="wp-content/uploads/sites/7/2017/09/logo_chalet.png"></a>
+
+        </div>
+
+        <div style="height: 10px;" class="nd_options_section"></div>
+
+      </div>
+
+    </div>
+    <!--END LOGO-->
+
+
+    <!--START navigation-->
+    <div id="nd_options_navigation_4_container" class="nd_options_section nd_options_position_relative ">
+
+      <div style="background-color: #ffffff ; border-bottom: 1px solid #f1f1f1 ; border-top: 1px solid #f1f1f1 ;"
+        class="nd_options_section">
+
+        <div
+          class="nd_options_section nd_options_padding_15 nd_options_box_sizing_border_box nd_options_position_relative">
+
+          <div class="nd_options_section nd_options_display_none_all_responsive">
+
+            <div
+              class="nd_options_navigation_4 nd_options_navigation_type nd_options_text_align_right nd_options_display_none_all_responsive">
+
+              <div class="nd_options_display_block">
+                <div class="menu-main-menu-container">
+                  <ul id="menu-main-menu-1" class="menu">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-895 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1226">
+                      <a href aria-current="page">HOME</a>
+                      <ul class="sub-menu">
+                        <li
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-895 current_page_item menu-item-1502">
+                          <a href aria-current="page">Home 1</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505"><a
+                            href="home-2/">Home 2</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1504"><a
+                            href="home-3/">Home 3</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a
+                            href="home-4/">Home 4</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506"><a
+                            href="home-1/">Home 5</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a
+                            href="home-6/">Home 6</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1536"><a
+                            href="home-7/">Home 7</a></li>
+                        <li
+                          class="nd_options_demo_label menu-item menu-item-type-custom menu-item-object-custom menu-item-1511">
+                          <a target="_blank" rel="noopener noreferrer"
+                            href="http://www.nicdarkthemes.com/themes/hotel/wp/demo/multilingual/">Multilingual</a></li>
+                      </ul>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1203">
+                      <a href="search/">ROOMS</a>
+                      <ul class="sub-menu">
+                        <li
+                          class="nd_options_best_label menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_1 menu-item-1236">
+                          <a href="rooms/small-room/">Room Gallery</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_1 menu-item-1197">
+                          <a href="rooms/room-with-view/">Room Video</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_1 menu-item-1198">
+                          <a href="rooms/apartment/">Room Default</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-nd_booking_cpt_4 menu-item-1211">
+                          <a href="branches/hotel-london/">Single Branch</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1209"><a
+                        href="about-us/">ABOUT US</a></li>
+                    <li
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1196">
+                      <a href="#">PAGES</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1212"><a
+                            href="around-hotel/">Around Us</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1210"><a
+                            href="terms-and-conditions/">Terms &#038; Conditions</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1237"><a
+                            href="our-services/">Services</a></li>
+                        <li
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1215">
+                          <a href="contact/">Contact</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1216"><a
+                                href="contact/">Contact 1</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a
+                                href="contact-2/">Contact 2</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1218"><a
+                            target="_blank" rel="noopener noreferrer" href="coming-soon/">Coming Soon</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219"><a
+                            href="restaurant/">Restaurant</a></li>
+                        <li
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1223">
+                          <a href="about-us/">About Us</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1224"><a
+                                href="about-us/">About Us 1</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1221"><a
+                                href="about-us-2/">About Us 2</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1220"><a
+                            href="promotions/">Promotions</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1222"><a
+                            href="testimonials/">Testimonials</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1231"><a
+                            href="gallery/">Gallery</a></li>
+                      </ul>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1202">
+                      <a href="our-news/">NEWS</a>
+                      <ul class="sub-menu">
+                        <li
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1208">
+                          <a href="our-news/">Archive</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a
+                                href="our-news/">Full Width</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a
+                                href="our-news-right-sidebar/">Right Sidebar</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a
+                                href="our-news-left-sidebar/">Left Sidebar</a></li>
+                          </ul>
+                        </li>
+                        <li
+                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1204">
+                          <a href="new-website-online/">Single Post</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1205"><a
+                                href="new-website-online/">Right Sidebar</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1206"><a
+                                href="around-us/">Left Sidebar</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1207"><a
+                                href="daily-walk/">Full Width</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1201">
+                      <a href="contact/">CONTACT</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1213"><a
+                            href="contact/">Contact 1</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1214"><a
+                            href="contact-2/">Contact 2</a></li>
+                      </ul>
+                    </li>
+                    <li
+                      class="nd_options_book_now_btn menu-item menu-item-type-post_type menu-item-object-page menu-item-1232">
+                      <a href="search/">BOOK NOW</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+
+
+          <!--RESPONSIVE-->
+          <div
+            class="nd_options_section nd_options_text_align_center nd_options_display_none nd_options_display_block_responsive">
+            <div class="nd_options_section nd_options_height_20"></div>
+
+            <a class="nd_options_display_inline_block" href=""><img alt
+                class="nd_options_float_left nd_options_max_width_280_iphone_port" width="170"
+                src="wp-content/uploads/sites/7/2017/09/logo_chalet.png"></a>
+
+            <div class="nd_options_section nd_options_height_10"></div>
+
+            <div class="nd_options_section">
+              <a class="nd_options_open_navigation_4_sidebar_content nd_options_open_navigation_4_sidebar_content"
+                href="#">
+                <img alt class width="25"
+                  src="wp-content/plugins/nd-shortcodes/addons/customizer/header/img/icon-menu.svg">
+              </a>
+            </div>
+
+            <div class="nd_options_section nd_options_height_20"></div>
+          </div>
+          <!--RESPONSIVE-->
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <!--END navigation-->
+
+
+
+
+
+    <div
+      class="nd_tds_display_none_responsive nd_tds_right_30 nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_99">
+
+      <span style="top:1px; left:16px; font-size:10px; line-height:10px; border-radius:0px; padding:3px 5px;"
+        class="nd_tds_position_absolute nd_tds_color_fff_important nd_tds_background_color_3">NEW</span>
+
+      <a href="https://1.envato.market/WLRW3" target="_blank"
+        class="nd_tds_text_align_center nd_tds_width_65 nd_tds_float_left nd_tds_height_65 nd_tds_display_table nd_tds_font_size_25 nd_tds_line_height_25 nd_tds_color_fff_important nd_tds_border_radius_100_percentage nd_tds_background_color_1 nd_tds_box_shadow_0_0_20_000_015 nd_options_second_font">
+        <span
+          class="nd_tds_position_absolute nd_tds_top_22 nd_tds_left_13 nd_tds_font_size_8 nd_tds_line_height_8">$</span>
+        <span style="padding-top:7px;"
+          class="nd_tds_display_table_cell nd_tds_vertical_align_middle nd_tds_padding_left_5">54</span>
+      </a>
+    </div>
+
+    <div style="right:80px;"
+      class="nd_tds_display_none_responsive nd_tds_bottom_30 nd_tds_position_fixed nd_tds_z_index_99">
+      <a target="_blank"
+        class="nd_tds_border_radius_100_percentage nd_tds_width_35 nd_tds_height_35 nd_tds_float_left nd_tds_background_color_2 nd_tds_box_shadow_0_0_20_000_015"
+        href="https://1.envato.market/WLRW3">
+        <img class="nd_tds_position_absolute nd_tds_left_10 nd_tds_top_10" width="15px"
+          src="wp-content/plugins/nd-theme-demos-switcher/addons/fixed-img/img/envato.png">
+      </a>
+    </div>
+
+
+
+
+
+
+    <!--page margin-->
+
+    <!--start nd_options_container-->
+    <div class="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
+
+
+      <!--#post-->
+      <div style="float:left; width:100%;" id="post-895" class="post-895 page type-page status-publish hentry">
+
+        <!--automatic title-->
+
+        <!--start content-->
+         
+
+
+         <!--start content-->
+                    <div class="vc_row wpb_row vc_row-fluid">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div id="rev_slider_9_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:#FFFFFF;padding:0px;margin-top:0px;margin-bottom:0px;">
+                                        <!-- START REVOLUTION SLIDER 5.4.6.3.1 fullwidth mode -->
+                                        <div id="rev_slider_9_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.6.3.1">
+                                            <ul>
+                                                <!-- SLIDE  -->
+                                                <li data-index="rs-26" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://www.nicdarkthemes.com/themes/hotel/wp/demo/chalet-wordpress-theme/wp-content/uploads/sites/7/2017/09/parallax6-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                    <!-- MAIN IMAGE -->
+                                                    <img src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/chalet-wordpress-theme/wp-content/uploads/sites/7/2017/09/parallax6.jpg" alt="" title="parallax6" width="1600" height="1066" data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="14" class="rev-slidebg" data-no-retina>
+                                                    <!-- LAYERS -->
+                                                    <!-- LAYER NR. 1 -->
+                                                    <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-26-layer-4" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['3000','3000']" data-height="['1000','1000']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background-color:rgba(0,0,0,0.5);background:linear-gradient(to bottom, rgba(135,135,135,0) 0%,rgba(135,135,135,0.7) 100%);"></div>
+                                                    <!-- LAYER NR. 2 -->
+                                                    <div class="tp-caption   tp-resizeme" id="nd_options_typewriter_42" data-x="30" data-y="bottom" data-voffset="150" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','off','off']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":500,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: px;">
+                                                        <h1 style="color:#ffffff; padding:px; text-align:; font-size:100px; line-height:100px; letter-spacing: px; font-weight:normal;" class=" nd_options_first_font ">CHALET B &B</h1>
+                                                        <div style="background-color:; height: 20px;" class="nicdark_section"></div>
+                                                        <script type="text/javascript">
+                                                            //<![CDATA[
+
+                                                            jQuery(document).ready(function() {
+
+                                                                //typed
+                                                                jQuery(".nd_options_typed_85").typed({
+                                                                    stringsElement: jQuery(".nd_options_typed_strings_85"),
+                                                                    typeSpeed: 100,
+                                                                    backDelay: 500,
+                                                                    loop: true,
+                                                                    contentType: "html",
+                                                                    loopCount: false
+                                                                });
+
+                                                            });
+
+                                                            //]]&gt;
+                                                        </script>
+                                                        <style type="text/css">
+                                                            .nd_options_typewriter_85 .typed-cursor {
+                                                                font-size: 20px;
+                                                                color: #ffffff;
+                                                            }
+                                                        </style>
+                                                        <!--START typed words-->
+                                                        <div class="nd_options_display_none_all_iphone nd_options_section  nd_options_typewriter_85 ">
+                                                            <strong style="color:#ffffff; font-size:20px; " class="nd_options_first_font">AMAZING DEMO FOR YOUR </strong>
+                                                            <div class="nd_options_typed_strings_85">
+                                                                <p>
+                                                                    <strong style="color:#ffffff; font-size:20px;" class="nd_options_first_font">MOUNTAIN CHALET</strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong style="color:#ffffff; font-size:20px;" class="nd_options_first_font">BED AND BREAKFAST</strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong style="color:#ffffff; font-size:20px;" class="nd_options_first_font"></strong>
+                                                                </p>
+                                                            </div>
+                                                            <span class="nd_options_typed_85 nd_options_padding_botttom_5" style="white-space:pre; border-bottom: 5px solid #ffffff; "></span>
+                                                        </div>
+                                                        <!--END typed words-->
+                                                    </div>
+                                                </li>
+                                                <!-- SLIDE  -->
+                                                <li data-index="rs-35" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://www.nicdarkthemes.com/themes/hotel/wp/demo/chalet-wordpress-theme/wp-content/uploads/sites/7/2017/09/parallax2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                    <!-- MAIN IMAGE -->
+                                                    <img src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/chalet-wordpress-theme/wp-content/uploads/sites/7/2017/09/parallax2.jpg" alt="" title="parallax2" width="1551" height="1034" data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="14" class="rev-slidebg" data-no-retina>
+                                                    <!-- LAYERS -->
+                                                    <!-- LAYER NR. 3 -->
+                                                    <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-35-layer-4" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['3000']" data-height="['873']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background-color:rgba(0,0,0,0.5);background:linear-gradient(to bottom, rgba(135,135,135,0) 0%,rgba(135,135,135,0.7) 100%);"></div>
+                                                    <!-- LAYER NR. 4 -->
+                                                    <div class="tp-caption   tp-resizeme" id="nd_options_typewriter_43" data-x="29" data-y="bottom" data-voffset="150" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','off','off']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":500,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: px;">
+                                                        <h1 style="color:#ffffff; padding:px; text-align:; font-size:100px; line-height:100px; letter-spacing: px; font-weight:normal;" class=" nd_options_first_font ">CHALET B &B</h1>
+                                                        <div style="background-color:; height: 20px;" class="nicdark_section"></div>
+                                                        <script type="text/javascript">
+                                                            //<![CDATA[
+
+                                                            jQuery(document).ready(function() {
+
+                                                                //typed
+                                                                jQuery(".nd_options_typed_87").typed({
+                                                                    stringsElement: jQuery(".nd_options_typed_strings_87"),
+                                                                    typeSpeed: 100,
+                                                                    backDelay: 500,
+                                                                    loop: true,
+                                                                    contentType: "html",
+                                                                    loopCount: false
+                                                                });
+
+                                                            });
+
+                                                            //]]&gt;
+                                                        </script>
+                                                        <style type="text/css">
+                                                            .nd_options_typewriter_87 .typed-cursor {
+                                                                font-size: 20px;
+                                                                color: #ffffff;
+                                                            }
+                                                        </style>
+                                                        <!--START typed words-->
+                                                        <div class="nd_options_display_none_all_iphone nd_options_section  nd_options_typewriter_87 ">
+                                                            <strong style="color:#ffffff; font-size:20px; " class="nd_options_first_font">AMAZING DEMO FOR YOUR </strong>
+                                                            <div class="nd_options_typed_strings_87">
+                                                                <p>
+                                                                    <strong style="color:#ffffff; font-size:20px;" class="nd_options_first_font">MOUNTAIN CHALET</strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong style="color:#ffffff; font-size:20px;" class="nd_options_first_font">BED AND BREAKFAST</strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong style="color:#ffffff; font-size:20px;" class="nd_options_first_font"></strong>
+                                                                </p>
+                                                            </div>
+                                                            <span class="nd_options_typed_87 nd_options_padding_botttom_5" style="white-space:pre; border-bottom: 5px solid #ffffff; "></span>
+                                                        </div>
+                                                        <!--END typed words-->
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <script>
+                                                var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
+                                                var htmlDivCss = "";
+                                                if (htmlDiv) {
+                                                    htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                } else {
+                                                    var htmlDiv = document.createElement("div");
+                                                    htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+                                                    document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+                                                }
+                                            </script>
+                                            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                                        </div>
+                                        <script>
+                                            var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
+                                            var htmlDivCss = "";
+                                            if (htmlDiv) {
+                                                htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                            } else {
+                                                var htmlDiv = document.createElement("div");
+                                                htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+                                                document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+                                            }
+                                        </script>
+                                        <script type="text/javascript">
+                                            setREVStartSize({
+                                                c: jQuery('#rev_slider_9_1'),
+                                                gridwidth: [1240],
+                                                gridheight: [800],
+                                                sliderLayout: 'fullwidth'
+                                            });
+
+                                            var revapi9, tpj = jQuery;
+
+                                            tpj(document).ready(function() {
+                                                if (tpj("#rev_slider_9_1").revolution == undefined) {
+                                                    revslider_showDoubleJqueryError("#rev_slider_9_1");
+                                                } else {
+                                                    revapi9 = tpj("#rev_slider_9_1").show().revolution({
+                                                        sliderType: "standard",
+                                                        jsFileLocation: "//www.nicdarkthemes.com/themes/hotel/wp/demo/chalet-wordpress-theme/wp-content/plugins/revslider/public/assets/js/",
+                                                        sliderLayout: "fullwidth",
+                                                        dottedOverlay: "none",
+                                                        delay: 9000,
+                                                        navigation: {
+                                                            keyboardNavigation: "on",
+                                                            keyboard_direction: "horizontal",
+                                                            mouseScrollNavigation: "off",
+                                                            mouseScrollReverse: "default",
+                                                            onHoverStop: "off",
+                                                            touch: {
+                                                                touchenabled: "on",
+                                                                touchOnDesktop: "off",
+                                                                swipe_threshold: 75,
+                                                                swipe_min_touches: 1,
+                                                                swipe_direction: "horizontal",
+                                                                drag_block_vertical: false
+                                                            },
+                                                            arrows: {
+                                                                style: "uranus",
+                                                                enable: true,
+                                                                hide_onmobile: true,
+                                                                hide_under: 480,
+                                                                hide_onleave: false,
+                                                                tmp: '',
+                                                                left: {
+                                                                    h_align: "left",
+                                                                    v_align: "center",
+                                                                    h_offset: 20,
+                                                                    v_offset: 0
+                                                                },
+                                                                right: {
+                                                                    h_align: "right",
+                                                                    v_align: "center",
+                                                                    h_offset: 20,
+                                                                    v_offset: 0
+                                                                }
+                                                            }
+                                                        },
+                                                        visibilityLevels: [1240, 1024, 778, 480],
+                                                        gridwidth: 1240,
+                                                        gridheight: 800,
+                                                        lazyType: "none",
+                                                        parallax: {
+                                                            type: "mouse",
+                                                            origo: "enterpoint",
+                                                            speed: 400,
+                                                            speedbg: 0,
+                                                            speedls: 0,
+                                                            levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+                                                        },
+                                                        shadow: 0,
+                                                        spinner: "spinner2",
+                                                        stopLoop: "off",
+                                                        stopAfterLoops: -1,
+                                                        stopAtSlide: -1,
+                                                        shuffle: "off",
+                                                        autoHeight: "off",
+                                                        disableProgressBar: "on",
+                                                        hideThumbsOnMobile: "off",
+                                                        hideSliderAtLimit: 0,
+                                                        hideCaptionAtLimit: 0,
+                                                        hideAllCaptionAtLilmit: 0,
+                                                        debugMode: false,
+                                                        fallbacks: {
+                                                            simplifyAll: "off",
+                                                            nextSlideOnWindowFocus: "off",
+                                                            disableFocusListener: false,
+                                                        }
+                                                    });
+                                                }
+
+                                            });
+                                            /*ready*/
+                                        </script>
+                                        <script>
+                                            var htmlDivCss = ' #rev_slider_9_1_wrapper .tp-loader.spinner2{ background-color: #1c1c1c !important; } ';
+                                            var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                            if (htmlDiv) {
+                                                htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                            } else {
+                                                var htmlDiv = document.createElement('div');
+                                                htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                            }
+                                        </script>
+                                        <script>
+                                            var htmlDivCss = unescape("%23nd_options_typewriter_42%20strong%2C%0A%23nd_options_typewriter_43%20strong%7B%0A%20%20%20%20font-weight%3Alighter%20%21important%3B%20%0A%09letter-spacing%3A3px%3B%20%20%0A%20%20%20%20%0A%7D%0A%23nd_options_typewriter_42%20p%2C%0A%23nd_options_typewriter_43%20p%7B%0A%20%20%20font-weight%3Alighter%20%21important%3B%20%0A%20%20%20letter-spacing%3A3px%3B%20%0A%7D%0A%0A%0A%23nd_options_typewriter_42%20span.nd_options_padding_botttom_5%2C%0A%23nd_options_typewriter_43%20span.nd_options_padding_botttom_5%7B%0A%09border-bottom-width%3A1px%20%21important%3B%0A%7D");
+                                            var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                            if (htmlDiv) {
+                                                htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                            } else {
+                                                var htmlDiv = document.createElement('div');
+                                                htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                            }
+                                        </script>
+                                        <script>
+                                            var htmlDivCss = unescape("%23rev_slider_9_1%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_9_1%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_9_1%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A");
+                                            var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                            if (htmlDiv) {
+                                                htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                            } else {
+                                                var htmlDiv = document.createElement('div');
+                                                htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                            }
+                                        </script>
+                                    </div>
+                                    <!-- END REVOLUTION SLIDER -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        
+        <div class="vc_row wpb_row vc_row-fluid vc_custom_1470751334579 vc_row-has-fill">
+          <div class="wpb_column vc_column_container vc_col-sm-3">
+            <div class="vc_column-inner vc_custom_1468511468322">
+              <div class="wpb_wrapper">
+
+
+                <script type="text/javascript">
+                  //<![CDATA[
+
+                  jQuery(document).ready(function () {
+
+                    //START masonry
+                    jQuery(function ($) {
+
+                      //Masonry
+                      var $nd_options_masonry_content = $(".nd_options_masonry_content").imagesLoaded(function () {
+                        // init Masonry after all images have loaded
+                        $nd_options_masonry_content.masonry({
+                          itemSelector: ".nd_options_masonry_item"
+                        });
+                      });
+
+
+                    });
+                    //END masonry
+
+                  });
+
+    //]]&gt;
+                </script>
+
+
+                <div class="nd_options_section nd_options_masonry_content nd_options_pg_home_5 ">
+
+
+                  <div style="background-color: #78635a;"
+                    class=" nd_options_width_100_percentage nd_options_float_left nd_options_padding_40 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+                    <h3 class="nd_options_color_white nd_options_margin_0_important nd_options_padding_0"><strong>Quote
+                        post</strong></h3>
+                    <div class="nd_options_section nd_options_height_20"></div>
+                    <p class="nd_options_color_white nd_options_margin_0_important nd_options_padding_0">Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="nd_options_section nd_options_height_20"></div>
+                    <a class="nd_options_display_inline_block nd_options_color_white nd_options_border_1_solid_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13"
+                      href="quote-post/">READ MORE</a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
+            <div class="vc_column-inner vc_custom_1505899416916">
+              <div class="wpb_wrapper">
+                <h3
+                  style="color:#ffffff; padding:px; text-align:; font-size:px; line-height:px; letter-spacing: px; font-weight:normal;"
+                  class=" nd_options_first_font ">Hotel Info</h3>
+                <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+
+
+                <div class="nd_options_section  nd_options_display_table ">
+                  <div
+                    class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_left nd_options_padding_10 nd_options_box_sizing_border_box">
+                    <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">Check-In</p>
+                  </div>
+                  <div
+                    class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_right nd_options_padding_10 nd_options_box_sizing_border_box">
+                    <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">14 - 19:00</p>
+                  </div>
+                </div>
+
+
+                <div style="background-color:; height: 6px;" class="nicdark_section"></div>
+                <div style="background-color:#78635a; height: 2px;" class="nicdark_section"></div>
+                <div style="background-color:; height: 6px;" class="nicdark_section"></div>
+
+
+                <div class="nd_options_section  nd_options_display_table ">
+                  <div
+                    class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_left nd_options_padding_10 nd_options_box_sizing_border_box">
+                    <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">Check-Out</p>
+                  </div>
+                  <div
+                    class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_right nd_options_padding_10 nd_options_box_sizing_border_box">
+                    <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">8 - 12:00</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-6">
+            <div class="vc_column-inner vc_custom_1469026316155">
+              <div class="wpb_wrapper">
+                <div style="background-color:; height: 13px;" class="nicdark_section"></div>
+
+                <div class="nd_booking_section nd_booking_home_5_search_component ">
+
+                  <!--START FORM-->
+                  <form action="/search/" method="get">
+
+
+                    <div
+                      class="nd_booking_width_75_percentage nd_booking_width_100_percentage_all_iphone nd_booking_float_left nd_booking_padding_30 nd_booking_box_sizing_border_box nd_booking_bg_white">
+
+                      <!--check in/out-->
+                      <div
+                        class="nd_booking_width_33_percentage nd_booking_width_100_percentage_all_iphone nd_booking_border_right_2_solid_grey nd_booking_border_0_all_iphone nd_booking_float_left nd_booking_box_sizing_border_box">
+
+
+                        <div id="nd_booking_open_calendar_from"
+                          class="nd_booking_section   nd_booking_box_sizing_border_box nd_booking_text_align_center nd_booking_cursor_pointer">
+                          <div
+                            class="nd_booking_section  nd_booking_box_sizing_border_box nd_booking_text_align_center">
+                            <h6
+                              class="nd_options_color_grey nd_options_second_font nd_booking_letter_spacing_2 nd_booking_font_size_12">
+                              CHECK-IN</h6>
+                            <div class="nd_booking_section nd_booking_height_15"></div>
+                            <div class="nd_booking_display_inline_flex ">
+                              <div class="nd_booking_float_left nd_booking_text_align_right">
+                                <h1 id="nd_booking_date_number_from_front"
+                                  class="nd_booking_font_size_50 nd_options_color_greydark nd_booking_font_weight_bold">
+                                  12</h1>
+                              </div>
+                              <div
+                                class="nd_booking_float_right nd_booking_text_align_center nd_booking_margin_left_10">
+                                <h6 id="nd_booking_date_month_from_front"
+                                  class="nd_options_color_greydark  nd_booking_margin_top_7 nd_booking_font_size_12">May
+                                </h6>
+                                <div class="nd_booking_section nd_booking_height_5"></div>
+                                <img alt width="12"
+                                  src="wp-content/plugins/nd-booking/assets/img/icons/icon-down-arrow-grey.svg">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <input type="hidden" id="nd_booking_date_month_from"
+                          class="nd_booking_section nd_booking_margin_top_20">
+                        <input type="hidden" id="nd_booking_date_number_from"
+                          class="nd_booking_section nd_booking_margin_top_20">
+                        <input placeholder="Check In"
+                          class="nd_booking_section nd_booking_border_width_0_important nd_booking_padding_0_important nd_booking_height_0_important"
+                          type="text" name="nd_booking_archive_form_date_range_from"
+                          id="nd_booking_archive_form_date_range_from" value>
+                      </div>
+                      <div
+                        class="nd_booking_width_33_percentage nd_booking_width_100_percentage_all_iphone nd_booking_border_right_2_solid_grey nd_booking_border_0_all_iphone nd_booking_float_left  nd_booking_box_sizing_border_box">
+
+                        <div id="nd_booking_open_calendar_to"
+                          class="nd_booking_section  nd_booking_box_sizing_border_box nd_booking_text_align_center nd_booking_cursor_pointer">
+                          <div
+                            class="nd_booking_section  nd_booking_box_sizing_border_box nd_booking_text_align_center">
+                            <h6
+                              class="nd_options_color_grey nd_options_second_font nd_booking_letter_spacing_2 nd_booking_font_size_12 nd_booking_margin_top_20_all_iphone">
+                              CHECK-OUT</h6>
+                            <div class="nd_booking_section nd_booking_height_15"></div>
+                            <div class="nd_booking_display_inline_flex ">
+                              <div class="nd_booking_float_left nd_booking_text_align_right">
+                                <h1 id="nd_booking_date_number_to_front"
+                                  class="nd_booking_font_size_50 nd_options_color_greydark nd_booking_font_weight_bold">
+                                  13</h1>
+                              </div>
+                              <div
+                                class="nd_booking_float_right nd_booking_text_align_center nd_booking_margin_left_10">
+                                <h6 id="nd_booking_date_month_to_front"
+                                  class="nd_options_color_greydark  nd_booking_margin_top_7 nd_booking_font_size_12">May
+                                </h6>
+                                <div class="nd_booking_section nd_booking_height_5"></div>
+                                <img alt width="12"
+                                  src="wp-content/plugins/nd-booking/assets/img/icons/icon-down-arrow-grey.svg">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <input type="hidden" id="nd_booking_date_month_to"
+                          class="nd_booking_section nd_booking_margin_top_20">
+                        <input type="hidden" id="nd_booking_date_number_to"
+                          class="nd_booking_section nd_booking_margin_top_20">
+                        <input placeholder="Check Out"
+                          class="nd_booking_section nd_booking_border_width_0_important nd_booking_padding_0_important nd_booking_height_0_important"
+                          type="text" name="nd_booking_archive_form_date_range_to"
+                          id="nd_booking_archive_form_date_range_to" value>
+
+                      </div>
+
+                      <script type="text/javascript">
+                        //<![CDATA[
+                        jQuery(document).ready(function () {
+
+                          jQuery(function ($) {
+
+                            $("#nd_booking_archive_form_date_range_from").datepicker({
+                              defaultDate: "+1w",
+                              minDate: 0,
+                              altField: "#nd_booking_date_month_from",
+                              altFormat: "M",
+                              firstDay: 0,
+                              dateFormat: "mm/dd/yy",
+                              monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                              monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                              dayNamesMin: ["SU", "MO", "TU", "WE", "TH", "FR", "SA"],
+                              nextText: "NEXT",
+                              prevText: "PREV",
+                              changeMonth: false,
+                              numberOfMonths: 1,
+                              onClose: function () {
+                                var minDate = $(this).datepicker("getDate");
+                                var newMin = new Date(minDate.setDate(minDate.getDate() + 1));
+                                $("#nd_booking_archive_form_date_range_to").datepicker("option", "minDate", newMin);
+
+                                var nd_booking_input_date_from = $("#nd_booking_archive_form_date_range_from").val();
+                                var nd_booking_date_number_from = nd_booking_input_date_from.substring(3, 5);
+                                $("#nd_booking_date_number_from").val(nd_booking_date_number_from);
+                                var nd_booking_input_date_to = $("#nd_booking_archive_form_date_range_to").val();
+                                var nd_booking_date_number_to = nd_booking_input_date_to.substring(3, 5);
+                                $("#nd_booking_date_number_to").val(nd_booking_date_number_to);
+
+                                $("#nd_booking_date_number_from_front").text(nd_booking_date_number_from);
+                                var nd_booking_date_month_from = $("#nd_booking_date_month_from").val();
+                                $("#nd_booking_date_month_from_front").text(nd_booking_date_month_from);
+
+                                $("#nd_booking_date_number_to_front").text(nd_booking_date_number_to);
+                                var nd_booking_date_month_to = $("#nd_booking_date_month_to").val();
+                                $("#nd_booking_date_month_to_front").text(nd_booking_date_month_to);
+
+                              }
+                            });
+
+
+                            $("#nd_booking_archive_form_date_range_to").datepicker({
+                              defaultDate: "+1w",
+                              altField: "#nd_booking_date_month_to",
+                              altFormat: "M",
+                              minDate: "+1d",
+                              monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                              monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                              dayNamesMin: ["SU", "MO", "TU", "WE", "TH", "FR", "SA"],
+                              nextText: "NEXT",
+                              prevText: "PREV",
+                              changeMonth: false,
+                              firstDay: 0,
+                              dateFormat: "mm/dd/yy",
+                              numberOfMonths: 1,
+                              onClose: function () {
+
+                                var nd_booking_input_date_from = $("#nd_booking_archive_form_date_range_from").val();
+                                var nd_booking_date_number_from = nd_booking_input_date_from.substring(3, 5);
+                                $("#nd_booking_date_number_from").val(nd_booking_date_number_from);
+                                var nd_booking_input_date_to = $("#nd_booking_archive_form_date_range_to").val();
+                                var nd_booking_date_number_to = nd_booking_input_date_to.substring(3, 5);
+                                $("#nd_booking_date_number_to").val(nd_booking_date_number_to);
+
+                                $("#nd_booking_date_number_from_front").text(nd_booking_date_number_from);
+                                var nd_booking_date_month_from = $("#nd_booking_date_month_from").val();
+                                $("#nd_booking_date_month_from_front").text(nd_booking_date_month_from);
+
+                                $("#nd_booking_date_number_to_front").text(nd_booking_date_number_to);
+                                var nd_booking_date_month_to = $("#nd_booking_date_month_to").val();
+                                $("#nd_booking_date_month_to_front").text(nd_booking_date_month_to);
+
+                              }
+                            });
+
+                            $("#nd_booking_archive_form_date_range_from").datepicker("setDate", "+0");
+                            $("#nd_booking_archive_form_date_range_to").datepicker("setDate", "+1");
+
+                            function nd_booking_get_nights() {
+                              var nd_booking_archive_form_date_range_from = $("#nd_booking_archive_form_date_range_from").val();
+                              var nd_booking_archive_form_date_range_to = $("#nd_booking_archive_form_date_range_to").val();
+                              var nd_booking_start = new Date(nd_booking_archive_form_date_range_from);
+                              var nd_booking_end = new Date(nd_booking_archive_form_date_range_to);
+                              var nd_booking_nights_number = (nd_booking_end - nd_booking_start) / 1000 / 60 / 60 / 24;
+                              $(".nd_booking_nights_number").text(nd_booking_nights_number);
+                            }
+
+                            $("#nd_booking_open_calendar_from").click(function () {
+                              $("#nd_booking_archive_form_date_range_from").datepicker("show");
+                            });
+                            $("#nd_booking_open_calendar_to").click(function () {
+                              $("#nd_booking_archive_form_date_range_to").datepicker("show");
+                            });
+
+                          });
+
+                        });
+                  //]]&gt;
+                      </script>
+                      <!--check in/out-->
+
+
+
+                      <!--guests-->
+                      <div
+                        class="nd_booking_width_33_percentage nd_booking_width_100_percentage_all_iphone nd_booking_float_left  nd_booking_box_sizing_border_box">
+                        <div class="nd_booking_section  nd_booking_box_sizing_border_box nd_booking_text_align_center">
+                          <div
+                            class="nd_booking_section  nd_booking_box_sizing_border_box nd_booking_text_align_center">
+                            <h6
+                              class="nd_options_color_grey nd_options_second_font nd_booking_letter_spacing_2 nd_booking_font_size_12 nd_booking_margin_top_20_all_iphone">
+                              GUESTS</h6>
+                            <div class="nd_booking_section nd_booking_height_15"></div>
+                            <div class="nd_booking_display_inline_flex ">
+                              <div class="nd_booking_float_left nd_booking_text_align_right">
+                                <h1
+                                  class="nd_booking_font_size_50 nd_booking_color_greydark nd_booking_guests_number nd_booking_font_weight_bold">
+                                  1</h1>
+                              </div>
+                              <div
+                                class="nd_booking_float_right nd_booking_text_align_center nd_booking_margin_left_10">
+                                <div class="nd_booking_section nd_booking_height_7"></div>
+                                <div class="nd_booking_section">
+                                  <img
+                                    class="nd_booking_float_right nd_booking_guests_increase nd_booking_cursor_pointer"
+                                    style="transform: rotate(180deg);" alt width="12"
+                                    src="wp-content/plugins/nd-booking/assets/img/icons/icon-down-arrow-grey.svg">
+                                </div>
+                                <div class="nd_booking_section nd_booking_height_10"></div>
+                                <div class="nd_booking_section">
+                                  <img
+                                    class="nd_booking_float_right nd_booking_guests_decrease nd_booking_cursor_pointer"
+                                    alt width="12"
+                                    src="wp-content/plugins/nd-booking/assets/img/icons/icon-down-arrow-grey.svg">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="nd_booking_display_none" for="nd_booking_archive_form_guests">Guests :</label>
+                        <input placeholder="Guests" class="nd_booking_section nd_booking_display_none" type="number"
+                          name="nd_booking_archive_form_guests" id="nd_booking_archive_form_guests" min="1" value>
+                      </div>
+                      <script type="text/javascript">
+                        //<![CDATA[
+                        jQuery(document).ready(function () {
+
+                          jQuery(function ($) {
+
+                            $(".nd_booking_guests_increase").click(function () {
+                              var value = $(".nd_booking_guests_number").text();
+                              value++;
+                              $(".nd_booking_guests_number").text(value);
+                              $("#nd_booking_archive_form_guests").val(value);
+                            });
+
+                            $(".nd_booking_guests_decrease").click(function () {
+                              var value = $(".nd_booking_guests_number").text();
+
+                              if (value > 1) {
+                                value--;
+                                $(".nd_booking_guests_number").text(value);
+                                $("#nd_booking_archive_form_guests").val(value);
+                              }
+
+                            });
+
+                          });
+
+                        });
+                  //]]&gt;
+                      </script>
+                      <!--guests-->
+
+
+                    </div>
+
+
+
+                    <div
+                      class="nd_booking_width_25_percentage nd_booking_width_100_percentage_all_iphone nd_booking_float_left nd_booking_text_align_center nd_booking_bg_greydark">
+
+                      <input style="padding: 51px 20px; background-color:#1c1c1c;"
+                        class="nd_options_color_white nd_options_second_font_important nd_booking_width_100_percentage nd_booking_font_weight_lighter nd_booking_letter_spacing_2 nd_booking_font_size_12 nd_booking_line_height_18 nd_booking_white_space_normal"
+                        type="submit" value="CHECK AVAILABILITY">
+
+                    </div>
+
+
+                  </form>
+                  <!--END FORM-->
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-vc-full-width="true" data-vc-full-width-init="false"
+          class="vc_row wpb_row vc_row-fluid vc_custom_1504107772390">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+              <div class="wpb_wrapper">
+                <h6
+                  style="color:#a3a3a3; padding:px; text-align:center; font-size:12px; line-height:12px; letter-spacing: 2px; font-weight:lighter;"
+                  class=" nd_options_second_font ">LUXURY HOTEL</h6>
+                <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+                <div class="nd_options_section nd_options_line_height_0  nd_options_text_align_center ">
+                  <span style="height:1px; width:30px; background-color:#a3a3a3;"
+                    class="nd_options_display_inline_block"></span>
+                </div>
+                <div style="background-color:; height: 30px;" class="nicdark_section"></div>
+                <h1
+                  style="color:#727475; padding:px; text-align:center; font-size:55px; line-height:px; letter-spacing: px; font-weight:normal;"
+                  class="nd_options_font_size_40_important_all_iphone nd_options_line_height_40_important_all_iphone nd_options_first_font ">
+                  Best Rooms</h1>
+                <div style="background-color:; height: 45px;" class="nicdark_section"></div>
+                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                  <div class="wpb_column vc_column_container vc_col-sm-6">
+                    <div class="vc_column-inner vc_custom_1499939841347">
+                      <div class="wpb_wrapper">
+
+                        <script type="text/javascript">
+                          //<![CDATA[
+
+                          jQuery(document).ready(function () {
+
+                            //START masonry
+                            jQuery(function ($) {
+
+                              //Masonry
+                              var $nd_booking_masonry_content = $(".nd_booking_masonry_content").imagesLoaded(function () {
+                                // init Masonry after all images have loaded
+                                $nd_booking_masonry_content.masonry({
+                                  itemSelector: ".nd_booking_masonry_item"
+                                });
+                              });
+
+                            });
+                            //END masonry
+
+                          });
+
+    //]]&gt;
+                        </script>
+
+                        <div class="nd_booking_section nd_booking_masonry_content  ">
+
+                          <div id="nd_booking_archive_cpt_1_single_96"
+                            class="nd_booking_masonry_item nd_booking_width_100_percentage nd_booking_width_100_percentage_responsive">
+
+                            <div class="nd_booking_section nd_booking_padding_15 nd_booking_box_sizing_border_box">
+
+                              <div class="nd_booking_section nd_booking_border_1_solid_grey nd_booking_bg_white">
+
+
+
+                                <div class="nd_booking_section nd_booking_position_relative">
+
+                                  <img alt class="nd_booking_section"
+                                    src="wp-content/uploads/sites/7/2017/09/room5-1110x611.jpg">
+
+                                  <div
+                                    class="nd_booking_bg_greydark_alpha_gradient_3 nd_booking_position_absolute nd_booking_left_0 nd_booking_height_100_percentage nd_booking_width_100_percentage nd_booking_padding_30 nd_booking_box_sizing_border_box">
+                                    <div class="nd_booking_position_absolute nd_booking_bottom_20">
+                                      <p
+                                        class="nd_options_color_white nd_booking_margin_right_10 nd_booking_float_left nd_booking_font_size_11 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                        Hotel Rome</p><img alt class="nd_booking_margin_right_5 nd_booking_float_left"
+                                        width="10"
+                                        src="wp-content/plugins/nd-booking/assets/img/icons/icon-star-full-white.svg"><img
+                                        alt class="nd_booking_margin_right_5 nd_booking_float_left" width="10"
+                                        src="wp-content/plugins/nd-booking/assets/img/icons/icon-star-full-white.svg"><img
+                                        alt class="nd_booking_margin_right_5 nd_booking_float_left" width="10"
+                                        src="wp-content/plugins/nd-booking/assets/img/icons/icon-star-full-white.svg">
+                                    </div>
+                                  </div>
+
+                                </div>
+
+
+
+
+                                <div class="nd_booking_section nd_booking_padding_30 nd_booking_box_sizing_border_box">
+
+                                  <h1>Small Room</h1>
+                                  <div class="nd_booking_section nd_booking_height_10"></div>
+
+                                  <div class="nd_booking_section">
+                                    <div class="nd_booking_display_table nd_booking_float_left">
+                                      <img alt
+                                        class="nd_booking_margin_right_10 nd_booking_display_table_cell nd_booking_vertical_align_middle"
+                                        width="23"
+                                        src="wp-content/plugins/nd-booking/assets/img/icons/icon-user-grey.svg">
+                                      <p
+                                        class="  nd_booking_display_table_cell nd_booking_vertical_align_middle nd_booking_font_size_12 nd_booking_line_height_26">
+                                        1 GUESTS</p>
+                                      <img alt
+                                        class="nd_booking_margin_right_10 nd_booking_margin_left_20 nd_booking_display_table_cell nd_booking_vertical_align_middle"
+                                        width="20"
+                                        src="wp-content/plugins/nd-booking/assets/img/icons/icon-plan-grey.svg">
+                                      <p
+                                        class="  nd_booking_display_table_cell nd_booking_vertical_align_middle nd_booking_font_size_12 nd_booking_line_height_26">
+                                        15 Ft²</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="nd_booking_section nd_booking_height_20"></div>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl.
+                                    Duis ac mi leo.</p>
+                                  <div class="nd_booking_section nd_booking_height_20"></div>
+                                  <a style="background-color: #78635a;" href="rooms/small-room/"
+                                    class="nd_booking_padding_15_30_important nd_options_second_font_important nd_booking_border_radius_0_important nd_options_color_white nd_booking_cursor_pointer nd_booking_display_inline_block nd_booking_font_size_11 nd_booking_font_weight_bold nd_booking_letter_spacing_2">BOOK
+                                    <span class="nd_booking_display_none_all_iphone">NOW</span> FROM 30 $</a>
+
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-6">
+                    <div class="vc_column-inner vc_custom_1499939848725">
+                      <div class="wpb_wrapper">
+
+                        <script type="text/javascript">
+                          //<![CDATA[
+
+                          jQuery(document).ready(function () {
+
+                            //START masonry
+                            jQuery(function ($) {
+
+                              //Masonry
+                              var $nd_booking_masonry_content = $(".nd_booking_masonry_content").imagesLoaded(function () {
+                                // init Masonry after all images have loaded
+                                $nd_booking_masonry_content.masonry({
+                                  itemSelector: ".nd_booking_masonry_item"
+                                });
+                              });
+
+                            });
+                            //END masonry
+
+                          });
+
+    //]]&gt;
+                        </script>
+
+                        <div class="nd_booking_section nd_booking_masonry_content  ">
+
+                          <div id="nd_booking_archive_cpt_1_single_52"
+                            class="nd_booking_masonry_item nd_booking_width_50_percentage nd_booking_float_left nd_booking_width_100_percentage_responsive">
+
+                            <div class="nd_booking_section nd_booking_padding_15 nd_booking_box_sizing_border_box">
+
+                              <div class="nd_booking_section nd_booking_border_1_solid_grey nd_booking_bg_white">
+
+
+
+                                <a href="rooms/family-room/">
+                                  <div class="nd_booking_section nd_booking_position_relative">
+
+                                    <img alt class="nd_booking_section"
+                                      src="wp-content/uploads/sites/7/2017/09/room4-720x720.jpg">
+
+                                    <div
+                                      class="nd_booking_bg_greydark_alpha_gradient_3 nd_booking_position_absolute nd_booking_left_0 nd_booking_height_100_percentage nd_booking_width_100_percentage nd_booking_padding_30 nd_booking_box_sizing_border_box">
+                                      <div class="nd_booking_position_absolute nd_booking_bottom_20">
+
+
+                                        <div class="nd_booking_display_table nd_booking_float_left">
+                                          <p
+                                            class="nd_booking_display_table_cell nd_booking_padding_right_20 nd_booking_vertical_align_middle  nd_options_color_white nd_booking_margin_right_10  nd_booking_font_size_11 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            Family Room</p>
+                                          <p style="background-color:#78635a;"
+                                            class="nd_booking_display_table_cell nd_booking_vertical_align_middle  nd_options_color_white  nd_booking_font_size_11 nd_booking_padding_3_5 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            FROM 30 $</p>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </a>
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div id="nd_booking_archive_cpt_1_single_73"
+                            class="nd_booking_masonry_item nd_booking_width_50_percentage nd_booking_float_left nd_booking_width_100_percentage_responsive">
+
+                            <div class="nd_booking_section nd_booking_padding_15 nd_booking_box_sizing_border_box">
+
+                              <div class="nd_booking_section nd_booking_border_1_solid_grey nd_booking_bg_white">
+
+
+
+                                <a href="rooms/double-room/">
+                                  <div class="nd_booking_section nd_booking_position_relative">
+
+                                    <img alt class="nd_booking_section"
+                                      src="wp-content/uploads/sites/7/2017/09/room3-720x720.jpg">
+
+                                    <div
+                                      class="nd_booking_bg_greydark_alpha_gradient_3 nd_booking_position_absolute nd_booking_left_0 nd_booking_height_100_percentage nd_booking_width_100_percentage nd_booking_padding_30 nd_booking_box_sizing_border_box">
+                                      <div class="nd_booking_position_absolute nd_booking_bottom_20">
+
+
+                                        <div class="nd_booking_display_table nd_booking_float_left">
+                                          <p
+                                            class="nd_booking_display_table_cell nd_booking_padding_right_20 nd_booking_vertical_align_middle  nd_options_color_white nd_booking_margin_right_10  nd_booking_font_size_11 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            Double Room</p>
+                                          <p style="background-color:#78635a;"
+                                            class="nd_booking_display_table_cell nd_booking_vertical_align_middle  nd_options_color_white  nd_booking_font_size_11 nd_booking_padding_3_5 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            FROM 25 $</p>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </a>
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div id="nd_booking_archive_cpt_1_single_93"
+                            class="nd_booking_masonry_item nd_booking_width_50_percentage nd_booking_float_left nd_booking_width_100_percentage_responsive">
+
+                            <div class="nd_booking_section nd_booking_padding_15 nd_booking_box_sizing_border_box">
+
+                              <div class="nd_booking_section nd_booking_border_1_solid_grey nd_booking_bg_white">
+
+
+
+                                <a href="rooms/luxury-room/">
+                                  <div class="nd_booking_section nd_booking_position_relative">
+
+                                    <img alt class="nd_booking_section"
+                                      src="wp-content/uploads/sites/7/2017/09/room2-720x720.jpg">
+
+                                    <div
+                                      class="nd_booking_bg_greydark_alpha_gradient_3 nd_booking_position_absolute nd_booking_left_0 nd_booking_height_100_percentage nd_booking_width_100_percentage nd_booking_padding_30 nd_booking_box_sizing_border_box">
+                                      <div class="nd_booking_position_absolute nd_booking_bottom_20">
+
+
+                                        <div class="nd_booking_display_table nd_booking_float_left">
+                                          <p
+                                            class="nd_booking_display_table_cell nd_booking_padding_right_20 nd_booking_vertical_align_middle  nd_options_color_white nd_booking_margin_right_10  nd_booking_font_size_11 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            Luxury Room</p>
+                                          <p style="background-color:#78635a;"
+                                            class="nd_booking_display_table_cell nd_booking_vertical_align_middle  nd_options_color_white  nd_booking_font_size_11 nd_booking_padding_3_5 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            FROM 100 $</p>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </a>
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div id="nd_booking_archive_cpt_1_single_94"
+                            class="nd_booking_masonry_item nd_booking_width_50_percentage nd_booking_float_left nd_booking_width_100_percentage_responsive">
+
+                            <div class="nd_booking_section nd_booking_padding_15 nd_booking_box_sizing_border_box">
+
+                              <div class="nd_booking_section nd_booking_border_1_solid_grey nd_booking_bg_white">
+
+
+
+                                <a href="rooms/apartment/">
+                                  <div class="nd_booking_section nd_booking_position_relative">
+
+                                    <img alt class="nd_booking_section"
+                                      src="wp-content/uploads/sites/7/2017/09/room6-720x720.jpg">
+
+                                    <div
+                                      class="nd_booking_bg_greydark_alpha_gradient_3 nd_booking_position_absolute nd_booking_left_0 nd_booking_height_100_percentage nd_booking_width_100_percentage nd_booking_padding_30 nd_booking_box_sizing_border_box">
+                                      <div class="nd_booking_position_absolute nd_booking_bottom_20">
+
+
+                                        <div class="nd_booking_display_table nd_booking_float_left">
+                                          <p
+                                            class="nd_booking_display_table_cell nd_booking_padding_right_20 nd_booking_vertical_align_middle  nd_options_color_white nd_booking_margin_right_10  nd_booking_font_size_11 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            Apartment</p>
+                                          <p style="background-color:#78635a;"
+                                            class="nd_booking_display_table_cell nd_booking_vertical_align_middle  nd_options_color_white  nd_booking_font_size_11 nd_booking_padding_3_5 nd_booking_letter_spacing_2 nd_booking_text_transform_uppercase">
+                                            FROM 80 $</p>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </a>
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vc_row-full-width vc_clearfix"></div>
+        <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
+          data-vc-parallax-image="/wp-content/uploads/sites/7/2017/09/parallax8.jpg"
+          class="vc_row wpb_row vc_row-fluid nd_options_vc_parallax_filter_1_3 vc_custom_1504709246448 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving">
+          <div class="wpb_column vc_column_container vc_col-sm-6">
+            <div class="vc_column-inner vc_custom_1467206505540">
+              <div class="wpb_wrapper">
+                <h2
+                  style="color:#ffffff; padding:px; text-align:center; font-size:17px; line-height:17px; letter-spacing: 4px; font-weight:lighter;"
+                  class=" nd_options_second_font ">NEW OPENING SOON</h2>
+                <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+                <h2
+                  style="color:#ffffff; padding:px; text-align:center; font-size:60px; line-height:60px; letter-spacing: px; font-weight:normal;"
+                  class="nd_options_font_size_40_important_all_iphone nd_options_first_font ">Restaurant</h2>
+                <div style="background-color:; height: 40px;" class="nicdark_section"></div>
+
+
+
+
+                <script type="text/javascript">
+                  //<![CDATA[
+
+                  jQuery(document).ready(function () {
+
+                    //START counter
+                    jQuery(function ($) {
+
+                      //variables
+                      var nd_options_end_date = " June 06, 2020";
+                      var nd_options_width = "nd_options_width_25_percentage nd_options_float_left";
+
+                      //insert the class nd_options_display_none in the var if you wnat to hide the visualization
+                      var nd_options_display_years = "nd_options_display_none";
+                      var nd_options_display_days = "yes";
+                      var nd_options_display_hours = "yes";
+                      var nd_options_display_minutes = "yes";
+                      var nd_options_display_seconds = "yes";
+
+                      //call
+                      $(".nd_options_countdown").countdown({
+                        date: nd_options_end_date,
+                        render: function (data) {
+                          $(this.el).html("<div class=\" nd_options_home_5_countdown nd_options_section nd_options_text_align_center \"><!--***START 1***--><div class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_years + "  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">" + this.leadingZeros(data.years, 2) + "</h1><h5 style=\" color: ; background-color:  \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >YEARS</h5></div><!--***START 2***--><div class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_days + "  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">" + this.leadingZeros(data.days, 3) + "</h1><h5 style=\" color: #878787; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >DAYS</h5></div><!--***START 3***--><div class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_hours + "  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">" + this.leadingZeros(data.hours, 2) + "</h1><h5 style=\" color: #878787; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >HOURS</h5></div><!--***START 4***--><div class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + " " + nd_options_display_minutes + "  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">" + this.leadingZeros(data.min, 2) + "</h1><h5 style=\" color: #878787; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >MINUTES</h5></div><!--***START 5***--><div class=\" nd_options_width_100_percentage_iphone_port " + nd_options_width + "  " + nd_options_display_seconds + "  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">" + this.leadingZeros(data.sec, 2) + "</h1><h5 style=\" color: #878787; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >SECONDS</h5></div></div>");
+                        }
+                      });
+
+                    });
+                    //END counter
+
+                  });
+
+    //]]&gt;
+                </script>
+
+                <div class="nd_options_countdown"></div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-1">
+            <div class="vc_column-inner ">
+              <div class="wpb_wrapper"></div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-5">
+            <div class="vc_column-inner vc_custom_1467206512132">
+              <div class="wpb_wrapper">
+
+                <style>
+                  #nd_options_shortcode_cf7_1199 input[type="text"],
+                  #nd_options_shortcode_cf7_1199 input[type="email"],
+                  #nd_options_shortcode_cf7_1199 input[type="url"],
+                  #nd_options_shortcode_cf7_1199 input[type="tel"],
+                  #nd_options_shortcode_cf7_1199 input[type="number"],
+                  #nd_options_shortcode_cf7_1199 input[type="date"],
+                  #nd_options_shortcode_cf7_1199 input[type="checkbox"],
+                  #nd_options_shortcode_cf7_1199 input[type="file"],
+                  #nd_options_shortcode_cf7_1199 input[type="submit"],
+                  #nd_options_shortcode_cf7_1199 textarea,
+                  #nd_options_shortcode_cf7_1199 label,
+                  #nd_options_shortcode_cf7_1199 select {
+
+                    width: 100%;
+
+                  }
+
+
+                  .nd_options_customizer_forms span.wpcf7-not-valid-tip,
+                  .nd_options_customizer_forms .wpcf7-response-output.wpcf7-validation-errors,
+                  .nd_options_customizer_forms .wpcf7-response-output.wpcf7-mail-sent-ok {
+
+                    float: left;
+                    width: 100%;
+                    box-sizing: border-box;
+
+                  }
+                </style>
+
+
+
+                <!--start form-->
+                <div id="nd_options_shortcode_cf7_1199"
+                  class="nd_options_section nd_options_border_1_solid_grey nd_options_bg_white nd_options_home_5_form">
+
+                  <div
+                    class="nd_options_section nd_options_padding_20 nd_options_box_sizing_border_box nd_options_bg_grey nd_options_border_bottom_1_solid_grey nd_options_text_align_center">
+                    <h6 style="background-color:#78635a;"
+                      class="nd_options_second_font nd_options_padding_5 nd_options_border_radius_3 nd_options_color_white nd_options_display_inline_block">
+                      BOOK NOW</h6>
+                    <div class="nd_options_section nd_options_height_5"></div>
+                    <h1 class><strong>Contact Us</strong></h1>
+                  </div>
+
+                  <div class="nd_options_section nd_options_padding_20_50 nd_options_box_sizing_border_box">
+                    <div role="form" class="wpcf7" id="wpcf7-f1199-p895-o1" lang="en-US" dir="ltr">
+                      <div class="screen-reader-response"></div>
+                      <form action="/themes/hotel/wp/demo/chalet-wordpress-theme/#wpcf7-f1199-p895-o1" method="post"
+                        class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                          <input type="hidden" name="_wpcf7" value="1199">
+                          <input type="hidden" name="_wpcf7_version" value="4.8">
+                          <input type="hidden" name="_wpcf7_locale" value="en_US">
+                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1199-p895-o1">
+                          <input type="hidden" name="_wpcf7_container_post" value="895">
+                          <input type="hidden" name="_wpcf7_nonce" value="2d01bef809">
+                        </div>
+                        <div
+                          class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone "
+                          style="padding: 0px 10px 15px 0px; width:100%;">
+                          <p>Name :</p>
+                          <p><span class="wpcf7-form-control-wrap name-form"><input type="text" name="name-form" value
+                                size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required nd_options_padding_10_20_important nd_options_margin_top_10"
+                                aria-required="true" aria-invalid="false"></span></p>
+                        </div><br>
+                        <div
+                          class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone "
+                          style="padding: 0px 10px 15px 0px; width:100%;">
+                          <p>Email :</p>
+                          <p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value
+                                size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email nd_options_padding_10_20_important nd_options_margin_top_10"
+                                aria-required="true" aria-invalid="false"></span></p>
+                        </div><br>
+                        <div
+                          class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone "
+                          style="padding: 0px 10px 15px 0px; width:100%;">
+                          <p>Message :</p>
+                          <p><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="5"
+                                class="wpcf7-form-control wpcf7-textarea nd_options_padding_10_20_important nd_options_margin_top_10"
+                                aria-invalid="false"></textarea></span></p>
+                        </div><br>
+                        <div
+                          class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone "
+                          style="padding: 0px 0px 0px 0px; width:100%;"><input type="submit" value="SEND NOW"
+                            class="wpcf7-form-control wpcf7-submit nd_booking_padding_15_30_important nd_options_second_font_important nd_options_color_white nd_options_display_inline_block nd_options_font_size_11 nd_options_font_weight_bold nd_options_letter_spacing_2 nd_options_section">
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+                <!--end form-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vc_row-full-width vc_clearfix"></div>
+        <div data-vc-full-width="true" data-vc-full-width-init="false"
+          class="vc_row wpb_row vc_row-fluid vc_custom_1505901833458 vc_row-has-fill">
+          <div class="wpb_column vc_column_container vc_col-sm-4">
+            <div class="vc_column-inner vc_custom_1467206621506">
+              <div class="wpb_wrapper">
+
+
+                <div class="nd_options_section nd_options_position_relative nd_options_home_5_service">
+                  <a rel href="#"><img alt class="nd_options_position_absolute nd_options_left_0" width="50"
+                      src="wp-content/uploads/sites/7/2017/07/icon-14-1.png"></a>
+                  <div class="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
+                    <a rel href="#">
+                      <h2 style="color:;"><strong>Lorem Ipsum</strong></h2>
+                    </a>
+                    <div class="nd_options_section nd_options_height_20"></div>
+                    <p style="color:;" class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                      magna at porttitor vehicula nullam augue.</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-4">
+            <div class="vc_column-inner vc_custom_1467206625527">
+              <div class="wpb_wrapper">
+
+
+                <div class="nd_options_section nd_options_position_relative nd_options_home_5_service">
+                  <a rel href="#"><img alt class="nd_options_position_absolute nd_options_left_0" width="50"
+                      src="wp-content/uploads/sites/7/2017/07/icon-13.png"></a>
+                  <div class="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
+                    <a rel href="#">
+                      <h2 style="color:;"><strong>Lorem Ipsum</strong></h2>
+                    </a>
+                    <div class="nd_options_section nd_options_height_20"></div>
+                    <p style="color:;" class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                      magna at porttitor vehicula nullam augue.</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-4">
+            <div class="vc_column-inner vc_custom_1467206629924">
+              <div class="wpb_wrapper">
+
+
+                <div class="nd_options_section nd_options_position_relative nd_options_home_5_service">
+                  <a rel href="#"><img alt class="nd_options_position_absolute nd_options_left_0" width="50"
+                      src="wp-content/uploads/sites/7/2017/07/icon-11.png"></a>
+                  <div class="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
+                    <a rel href="#">
+                      <h2 style="color:;"><strong>Lorem Ipsum</strong></h2>
+                    </a>
+                    <div class="nd_options_section nd_options_height_20"></div>
+                    <p style="color:;" class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas
+                      magna at porttitor vehicula nullam augue.</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vc_row-full-width vc_clearfix"></div>
+        <div data-vc-full-width="true" data-vc-full-width-init="false"
+          class="vc_row wpb_row vc_row-fluid vc_custom_1504107813541">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+              <div class="wpb_wrapper">
+                <h6
+                  style="color:#a3a3a3; padding:px; text-align:center; font-size:12px; line-height:12px; letter-spacing: 2px; font-weight:lighter;"
+                  class=" nd_options_second_font ">BLOG</h6>
+                <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+                <div class="nd_options_section nd_options_line_height_0  nd_options_text_align_center ">
+                  <span style="height:1px; width:30px; background-color:#a3a3a3;"
+                    class="nd_options_display_inline_block"></span>
+                </div>
+                <div style="background-color:; height: 30px;" class="nicdark_section"></div>
+                <h1
+                  style="color:#727475; padding:px; text-align:center; font-size:55px; line-height:px; letter-spacing: px; font-weight:normal;"
+                  class="nd_options_font_size_40_important_all_iphone nd_options_line_height_40_important_all_iphone nd_options_first_font ">
+                  Our News</h1>
+                <div style="background-color:; height: 45px;" class="nicdark_section"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vc_row-full-width vc_clearfix"></div>
+        <div class="vc_row wpb_row vc_row-fluid">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner vc_custom_1467619684642">
+              <div class="wpb_wrapper">
+
+
+                <script type="text/javascript">
+                  //<![CDATA[
+
+                  jQuery(document).ready(function () {
+
+                    //START masonry
+                    jQuery(function ($) {
+
+                      //Masonry
+                      var $nd_options_masonry_content = $(".nd_options_masonry_content").imagesLoaded(function () {
+                        // init Masonry after all images have loaded
+                        $nd_options_masonry_content.masonry({
+                          itemSelector: ".nd_options_masonry_item"
+                        });
+                      });
+
+
+                    });
+                    //END masonry
+
+                  });
+
+    //]]&gt;
+                </script>
+
+
+                <!--START MASONRY-->
+                <div class="nd_options_section nd_options_masonry_content  ">
+
+
+                  <div
+                    class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+                    <div class="nd_options_section nd_options_border_1_solid_grey nd_options_bg_white">
+
+                      <div class="nd_options_section nd_options_position_relative">
+
+
+
+
+                        <div class="nd_options_section nd_options_position_relative">
+                          <a href="new-website-online/"><img alt class="nd_options_section"
+                              src="wp-content/uploads/sites/7/2017/09/blog1.jpg"></a>
+                        </div>
+
+
+
+                      </div>
+
+                      <div class="nd_options_section nd_options_padding_30 nd_options_box_sizing_border_box">
+                        <h5
+                          class="nd_options_margin_0_important nd_options_padding_0 nd_options_second_font nd_options_color_greydark nd_options_font_size_12 nd_options_text_transform_uppercase nd_options_letter_spacing_3 nd_options_font_weight_lighter">
+                          Luxury Hotel </h5>
+
+                        <div class="nd_options_section nd_options_height_15"></div>
+                        <div class="nd_options_section nd_options_line_height_0"><span
+                            class="nd_options_display_inline_block nd_options_float_left nd_options_bg_greydark nd_options_width_30 nd_options_height_1"></span>
+                        </div>
+                        <div class="nd_options_section nd_options_height_15"></div>
+
+                        <h2 class="nd_options_margin_0_important nd_options_padding_0 ">New Website</h2>
+                        <div class="nd_options_section nd_options_height_20"></div>
+                        <p class="nd_options_margin_0_important nd_options_padding_0">Phasellus enim libero, blandit vel
+                          sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                        <div class="nd_options_section nd_options_height_20"></div>
+                        <a style="border: 2px solid #78635a; color:#78635a;"
+                          class="nd_options_display_inline_block nd_options_line_height_11 nd_options_text_align_center nd_options_box_sizing_border_box nd_options_font_size_11 nd_options_font_weight_bold nd_options_second_font nd_options_padding_15_30  "
+                          href="new-website-online/">READ MORE</a>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+
+                  <div
+                    class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+
+                    <div style="background-color: #78635a;"
+                      class="nd_options_section nd_options_text_align_center nd_options_padding_50 nd_options_box_sizing_border_box">
+
+                      <h2 class="nd_options_color_white nd_options_line_height_35">
+                        <a class="nd_options_color_white nd_options_first_font" href="quote-post/">
+                          Follow our Resort Luxury Hotels
+                        </a>
+                      </h2>
+
+                      <div class="nd_options_section nd_options_height_0"></div>
+                      <div class="nd_options_section nd_options_text_align_center"><span
+                          class="nd_options_display_inline_block nd_options_bg_white nd_options_width_30 nd_options_height_1"></span>
+                      </div>
+                      <div class="nd_options_section nd_options_height_10"></div>
+
+                      <div class="nd_options_display_inline_block">
+                        <div class="nd_options_display_table nd_options_float_left">
+                          <img alt
+                            class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle"
+                            width="20" height="20"
+                            src="wp-content/plugins/nd-shortcodes/img/icons/icon-quote-white.svg">
+                          <p
+                            class="nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_letter_spacing_3 nd_options_font_weight_lighter nd_options_font_size_11 nd_options_text_transform_uppercase">
+                            JOHN DOE
+                          </p>
+                        </div>
+                      </div>
+
+
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div
+                    class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+
+
+                    <div class="nd_options_section nd_options_position_relative">
+
+
+
+
+                      <div class="nd_options_section nd_options_position_relative">
+                        <a href="relax-zone/"><img alt class="nd_options_section"
+                            src="wp-content/uploads/sites/7/2017/09/blog3.jpg"></a>
+
+
+                        <div
+                          class="nd_options_bg_greydark_alpha_gradient_3 nd_options_position_absolute nd_options_left_0 nd_options_height_100_percentage nd_options_width_100_percentage nd_options_padding_30 nd_options_box_sizing_border_box">
+                          <div class="nd_options_position_absolute nd_options_bottom_30">
+
+                            <h5
+                              class="nd_options_margin_0_important nd_options_padding_0 nd_options_second_font nd_options_color_white nd_options_font_size_12 nd_options_text_transform_uppercase nd_options_letter_spacing_3 nd_options_font_weight_lighter">
+                              News </h5>
+
+                            <div class="nd_options_section nd_options_height_15"></div>
+                            <div class="nd_options_section nd_options_line_height_0"><span
+                                class="nd_options_display_inline_block nd_options_float_left nd_options_bg_white nd_options_width_30 nd_options_height_1"></span>
+                            </div>
+                            <div class="nd_options_section nd_options_height_15"></div>
+
+                            <h2 class="nd_options_color_white">
+                              <a class="nd_options_color_white nd_options_first_font" href="relax-zone/">
+                                Relax Zone
+                              </a>
+                            </h2>
+
+                            <div class="nd_options_section nd_options_height_20"></div>
+
+                            <a class="nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_letter_spacing_3 nd_options_font_weight_lighter nd_options_font_size_11 nd_options_text_transform_uppercase"
+                              href="relax-zone/">
+                              <span class="nd_options_float_left">READ MORE</span>
+                              <img alt class="nd_options_float_left nd_options_margin_left_5 nd_options_margin_top_1"
+                                width="10" src="wp-content/plugins/nd-shortcodes/img/icons/icon-arrow-right-white.svg">
+                            </a>
+
+                          </div>
+
+                        </div>
+
+
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+
+
+
+
+                  <div
+                    class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+                    <div class="nd_options_section nd_options_border_1_solid_grey nd_options_bg_white">
+
+                      <div class="nd_options_section nd_options_position_relative">
+
+
+
+
+                        <div class="nd_options_section nd_options_position_relative">
+                          <a href="around-us/"><img alt class="nd_options_section"
+                              src="wp-content/uploads/sites/7/2017/09/blog2.jpg"></a>
+                        </div>
+
+
+
+                      </div>
+
+                      <div class="nd_options_section nd_options_padding_30 nd_options_box_sizing_border_box">
+                        <h5
+                          class="nd_options_margin_0_important nd_options_padding_0 nd_options_second_font nd_options_color_greydark nd_options_font_size_12 nd_options_text_transform_uppercase nd_options_letter_spacing_3 nd_options_font_weight_lighter">
+                          Luxury Hotel </h5>
+
+                        <div class="nd_options_section nd_options_height_15"></div>
+                        <div class="nd_options_section nd_options_line_height_0"><span
+                            class="nd_options_display_inline_block nd_options_float_left nd_options_bg_greydark nd_options_width_30 nd_options_height_1"></span>
+                        </div>
+                        <div class="nd_options_section nd_options_height_15"></div>
+
+                        <h2 class="nd_options_margin_0_important nd_options_padding_0 ">Around Us</h2>
+                        <div class="nd_options_section nd_options_height_20"></div>
+                        <p class="nd_options_margin_0_important nd_options_padding_0">Phasellus enim libero, blandit vel
+                          sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                        <div class="nd_options_section nd_options_height_20"></div>
+                        <a style="border: 2px solid #78635a; color:#78635a;"
+                          class="nd_options_display_inline_block nd_options_line_height_11 nd_options_text_align_center nd_options_box_sizing_border_box nd_options_font_size_11 nd_options_font_weight_bold nd_options_second_font nd_options_padding_15_30  "
+                          href="around-us/">READ MORE</a>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+
+                  <div
+                    class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+
+
+                    <div class="nd_options_section nd_options_position_relative">
+
+
+
+
+                      <div class="nd_options_section nd_options_position_relative">
+                        <a href="daily-walk/"><img alt class="nd_options_section"
+                            src="wp-content/uploads/sites/7/2017/09/blog4.jpg"></a>
+
+
+                        <div
+                          class="nd_options_bg_greydark_alpha_gradient_3 nd_options_position_absolute nd_options_left_0 nd_options_height_100_percentage nd_options_width_100_percentage nd_options_padding_30 nd_options_box_sizing_border_box">
+                          <div class="nd_options_position_absolute nd_options_bottom_30">
+
+                            <h5
+                              class="nd_options_margin_0_important nd_options_padding_0 nd_options_second_font nd_options_color_white nd_options_font_size_12 nd_options_text_transform_uppercase nd_options_letter_spacing_3 nd_options_font_weight_lighter">
+                              News </h5>
+
+                            <div class="nd_options_section nd_options_height_15"></div>
+                            <div class="nd_options_section nd_options_line_height_0"><span
+                                class="nd_options_display_inline_block nd_options_float_left nd_options_bg_white nd_options_width_30 nd_options_height_1"></span>
+                            </div>
+                            <div class="nd_options_section nd_options_height_15"></div>
+
+                            <h2 class="nd_options_color_white">
+                              <a class="nd_options_color_white nd_options_first_font" href="daily-walk/">
+                                Daily Walk
+                              </a>
+                            </h2>
+
+                            <div class="nd_options_section nd_options_height_20"></div>
+
+                            <a class="nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_letter_spacing_3 nd_options_font_weight_lighter nd_options_font_size_11 nd_options_text_transform_uppercase"
+                              href="daily-walk/">
+                              <span class="nd_options_float_left">READ MORE</span>
+                              <img alt class="nd_options_float_left nd_options_margin_left_5 nd_options_margin_top_1"
+                                width="10" src="wp-content/plugins/nd-shortcodes/img/icons/icon-arrow-right-white.svg">
+                            </a>
+
+                          </div>
+
+                        </div>
+
+
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+
+
+
+
+                  <div
+                    class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+
+                    <div style="background-color: #78635a;"
+                      class="nd_options_section nd_options_text_align_center nd_options_padding_50 nd_options_box_sizing_border_box">
+
+                      <div class="nd_options_display_inline_block">
+                        <img alt class="nd_options_margin_right_10" width="20" height="20"
+                          src="wp-content/plugins/nd-shortcodes/img/icons/icon-link-2-white.svg">
+                        <h2 class="nd_options_color_white nd_options_line_height_35 nd_options_display_inline_block">
+                          <span class="nd_options_padding_botttom_5">
+                            <a class="nd_options_color_white nd_options_first_font nd_options_letter_spacing_3 nd_options_font_weight_lighter"
+                              href="#">
+                              Check New Events
+                            </a>
+                          </span>
+                        </h2>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                </div>
+                <!--CLOSE MASONRY-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
+          data-vc-parallax-image="/wp-content/uploads/sites/7/2017/09/parallax4.jpg"
+          class="vc_row wpb_row vc_row-fluid nd_options_vc_parallax_filter_1_3 vc_custom_1504709253276 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+          <div class="wpb_column vc_column_container vc_col-sm-2">
+            <div class="vc_column-inner vc_custom_1467271134818">
+              <div class="wpb_wrapper">
+                <div style="text-align:center;" class="nd_options_section">
+                  <img alt style="width:100%;" class=" nd_options_margin_0 nd_options_padding_0 "
+                    src="wp-content/uploads/sites/7/2017/08/logo1.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-2">
+            <div class="vc_column-inner vc_custom_1467271143019">
+              <div class="wpb_wrapper">
+                <div style="text-align:center;" class="nd_options_section">
+                  <img alt style="width:100%;" class=" nd_options_margin_0 nd_options_padding_0 "
+                    src="wp-content/uploads/sites/7/2017/08/logo4.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-2">
+            <div class="vc_column-inner vc_custom_1467271150084">
+              <div class="wpb_wrapper">
+                <div style="text-align:center;" class="nd_options_section">
+                  <img alt style="width:100%;" class=" nd_options_margin_0 nd_options_padding_0 "
+                    src="wp-content/uploads/sites/7/2017/08/logo3.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-2">
+            <div class="vc_column-inner vc_custom_1467271159725">
+              <div class="wpb_wrapper">
+                <div style="text-align:center;" class="nd_options_section">
+                  <img alt style="width:100%;" class=" nd_options_margin_0 nd_options_padding_0 "
+                    src="wp-content/uploads/sites/7/2017/08/logo2.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-2">
+            <div class="vc_column-inner vc_custom_1467271168220">
+              <div class="wpb_wrapper">
+                <div style="text-align:center;" class="nd_options_section">
+                  <img alt style="width:100%;" class=" nd_options_margin_0 nd_options_padding_0 "
+                    src="wp-content/uploads/sites/7/2017/08/logo5.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-2">
+            <div class="vc_column-inner vc_custom_1467271192396">
+              <div class="wpb_wrapper">
+                <div style="text-align:center;" class="nd_options_section">
+                  <img alt style="width:100%;" class=" nd_options_margin_0 nd_options_padding_0 "
+                    src="wp-content/uploads/sites/7/2017/08/logo6.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vc_row-full-width vc_clearfix"></div>
+        <!--end content-->
+
+      </div>
+      <!--#post-->
+
+
+    </div>
+    <!--end container-->
+
+    <!--page margin-->
+
+
+
+
+
+    <!--START footer-->
+    <div style="background-color:#78635a; border-top: 1px solid #78635a;  " id="nd_options_footer_4"
+      class="nd_options_section">
+
+      <div class="nd_options_section nd_options_height_50"></div>
+
+      <!--start nd_options_container-->
+      <div class="nd_options_container nd_options_clearfix">
+
+
+        <div class="grid nd_options_grid_12 wpb_widgetised_column">
+          <div id="text-6" class="widget widget_text">
+            <div class="textwidget">
+              <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-4">
+                  <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                      <h3
+                        style="color:#ffffff; padding:px; text-align:; font-size:20px; line-height:20px; letter-spacing: px; font-weight:;"
+                        class=" nd_options_first_font ">Phone Support</h3>
+                      <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+                      <p style="color:#ffffff; padding:px; text-align:; font-size:12px; line-height:12px; letter-spacing: px; font-weight:;"
+                        class=" nd_options_second_font ">24 HOURS A DAY</p>
+                      <div style="background-color:; height: 28px;" class="nicdark_section"></div>
+                      <p style="color:#ffffff; padding:px; text-align:; font-size:20px; line-height:20px; letter-spacing: 1px; font-weight:;"
+                        class="nd_options_margin_bottom_50_responsive nd_options_second_font ">+ 01 345 647 745</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-4">
+                  <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                      <h3
+                        style="color:#ffffff; padding:px; text-align:; font-size:20px; line-height:20px; letter-spacing: px; font-weight:;"
+                        class=" nd_options_first_font ">Connect With Us</h3>
+                      <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+                      <p style="color:#ffffff; padding:px; text-align:; font-size:12px; line-height:12px; letter-spacing: px; font-weight:;"
+                        class=" nd_options_second_font ">SOCIAL MEDIA CHANNELS</p>
+                      <div style="background-color:; height: 30px;" class="nicdark_section"></div>
+
+                      <a style="margin:0px 20px 0px 0px; border: px solid ; border-radius:px; background-color:; padding:; "
+                        rel href class="nicdark_display_inline_block nd_options_float_left  "><img
+                          class="nd_options_float_left" alt width="20"
+                          src="wp-content/uploads/sites/7/2017/07/icon-4.png"></a>
+
+
+
+                      <a style="margin:0px 20px 0px 0px; border: px solid ; border-radius:px; background-color:; padding:; "
+                        rel href class="nicdark_display_inline_block nd_options_float_left  "><img
+                          class="nd_options_float_left" alt width="20"
+                          src="wp-content/uploads/sites/7/2017/07/icon-5.png"></a>
+
+
+
+                      <a style="margin:0px 20px 0px 0px; border: px solid ; border-radius:px; background-color:; padding:; "
+                        rel href class="nicdark_display_inline_block nd_options_float_left  "><img
+                          class="nd_options_float_left" alt width="20"
+                          src="wp-content/uploads/sites/7/2017/07/icon-6.png"></a>
+
+
+
+                      <a style="margin:0px 20px 0px 0px; border: px solid ; border-radius:px; background-color:; padding:; "
+                        rel href class="nicdark_display_inline_block nd_options_float_left  "><img
+                          class="nd_options_float_left" alt width="20"
+                          src="wp-content/uploads/sites/7/2017/07/icon-7.png"></a>
+
+
+
+                      <a style="margin:0px 20px 0px 0px; border: px solid ; border-radius:px; background-color:; padding:; "
+                        rel href class="nicdark_display_inline_block nd_options_float_left  "><img
+                          class="nd_options_float_left" alt width="20"
+                          src="wp-content/uploads/sites/7/2017/07/icon-8.png"></a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-4">
+                  <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                      <h3
+                        style="color:#ffffff; padding:px; text-align:; font-size:20px; line-height:20px; letter-spacing: px; font-weight:;"
+                        class="nd_options_margin_top_50_responsive nd_options_first_font ">Newsletter</h3>
+                      <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+                      <p style="color:#ffffff; padding:px; text-align:; font-size:12px; line-height:12px; letter-spacing: px; font-weight:;"
+                        class=" nd_options_second_font ">SIGN UP FOR SPECIAL OFFERS</p>
+                      <div style="background-color:; height: 20px;" class="nicdark_section"></div>
+
+                      <!--start form-->
+                      <div id="nd_options_shortcode_cf7_253" class="nd_options_section ">
+
+                        <div class="nd_options_section nd_options_box_sizing_border_box">
+                          <div role="form" class="wpcf7" id="wpcf7-f253-o2" lang="en-US" dir="ltr">
+                            <div class="screen-reader-response"></div>
+                            <form action="/themes/hotel/wp/demo/chalet-wordpress-theme/#wpcf7-f253-o2" method="post"
+                              class="wpcf7-form" novalidate="novalidate">
+                              <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="253">
+                                <input type="hidden" name="_wpcf7_version" value="4.8">
+                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f253-o2">
+                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                                <input type="hidden" name="_wpcf7_nonce" value="e17ecc5c11">
+                              </div>
+                              <p>
+                              <div
+                                class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone "
+                                style="padding: 0px 0px 0px 0px; width:60%;"><span
+                                  class="wpcf7-form-control-wrap email"><input type="email" name="email" value size="40"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email nd_options_width_100_percentage nd_options_line_height_21 nd_options_font_weight_lighter nd_options_bg_greydark_2_important nd_booking_border_width_0_important"
+                                    aria-required="true" aria-invalid="false" placeholder="Email"></span></div>
+                              <div
+                                class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone "
+                                style="padding: 0px 0px 0px 0px; width:40%;"><input type="submit" value="SUBSCRIBE"
+                                  class="wpcf7-form-control wpcf7-submit nd_booking_padding_15_30_important nd_options_second_font_important nd_options_color_white nd_booking_display_inline_block nd_booking_font_size_11 nd_booking_font_weight_bold nd_booking_letter_spacing_2 nd_booking_section">
+                              </div>
+                              </p>
+                              <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            </form>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--end form-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vc_row-full-width vc_clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!--end container-->
+
+      <div class="nd_options_section nd_options_height_10"></div>
+
+    </div>
+    <!--END footer-->
+
+
+
+
+
+    <!--START copyright-->
+    <div style="background-color:#ffffff;" id="nd_options_footer_4_copyright" class="nd_options_section">
+
+      <!--start nd_options_container-->
+      <div style="border-top: 1px solid #78635a " class="nd_options_container nd_options_clearfix">
+
+
+        <div class="grid nd_options_grid_6 nd_options_text_align_center_responsive">
+          <p class="nd_options_font_size_14 nd_options_line_height_25_responsive">
+
+          <div style="margin:20px 20px 0px 0px;"
+            class=" nd_options_font_size_12 nd_options_display_table nd_options_float_left">
+
+
+
+            <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+              <a style="color:;" class="nd_options_margin_right_20 nd_options_first_font " href="#">Home</a>
+            </div>
+
+
+          </div>
+
+
+
+          <div style="margin:20px 20px 0px 0px;"
+            class=" nd_options_font_size_12 nd_options_margin_right_20 nd_options_display_table nd_options_float_left">
+
+
+
+            <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+              <a style="color:;" class="nd_options_margin_right_20 nd_options_first_font " href="#">About Us</a>
+            </div>
+
+
+          </div>
+
+
+
+          <div style="margin:20px 20px 0px 0px;"
+            class=" nd_options_font_size_12 nd_options_margin_right_20 nd_options_display_table nd_options_float_left">
+
+
+
+            <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+              <a style="color:;" class="nd_options_margin_right_20 nd_options_first_font " href="#">Services</a>
+            </div>
+
+
+          </div>
+
+
+
+          <div style="margin:20px 20px 0px 0px;"
+            class=" nd_options_font_size_12 nd_options_margin_right_20 nd_options_display_table nd_options_float_left">
+
+
+
+            <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+              <a style="color:;" class="nd_options_margin_right_20 nd_options_first_font " href="#">Booking</a>
+            </div>
+
+
+          </div>
+
+
+
+          <div style="margin:20px 20px 0px 0px;"
+            class=" nd_options_font_size_12 nd_options_margin_right_20 nd_options_display_table nd_options_float_left">
+
+
+
+            <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+              <a style="color:;" class="nd_options_margin_right_20 nd_options_first_font " href="#">Contact</a>
+            </div>
+
+
+          </div>
+
+          </p>
+        </div>
+
+        <div class="grid nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive">
+          <p class="nd_options_font_size_14 nd_options_line_height_25_responsive">
+          <div style="text-align:right;" class="nd_options_section">
+            <img alt style="width:370px;"
+              class="nd_options_width_100_percentage_all_iphone_important nd_options_margin_0 nd_options_padding_0 "
+              src="wp-content/uploads/sites/7/2017/08/partners.png">
+          </div>
+          </p>
+        </div>
+
+      </div>
+      <!--end container-->
+
+    </div>
+    <!--END copyright-->
+
+
+
+
+
+  </div>
+  <!--END theme-->
+
+
+  <!--google analytics-->
+
+  <!--google analytics-->
+
+
+  <script type="text/javascript">
+    function revslider_showDoubleJqueryError(sliderID) {
+      var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+      errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+      errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+      errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+      errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+      jQuery(sliderID).show().html(errorMessage);
+    }
+  </script>
+  <link rel="stylesheet" id="jquery-ui-datepicker-css-css"
+    href="wp-content/plugins/nd-booking/assets/css/jquery-ui-datepicker_ver%3D5.2.2.css" type="text/css" media="all">
+
+  <script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/scripts_ver%3D4.8.js"></script>
+  <script type="text/javascript" src="wp-includes/js/comment-reply.min_ver%3D5.2.2.js"></script>
+  <script type="text/javascript" src="wp-includes/js/wp-embed.min_ver%3D5.2.2.js"></script>
+  <script type="text/javascript"
+    src="wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min_ver%3D5.1.1.js"></script>
+  <script type="text/javascript"
+    src="wp-content/plugins/nd-shortcodes/shortcodes/custom/typewriter/js/typewriter_ver%3D5.2.2.js"></script>
+  <script type="text/javascript" src="wp-includes/js/imagesloaded.min_ver%3D3.2.0.js"></script>
+  <script type="text/javascript" src="wp-includes/js/masonry.min_ver%3D3.3.2.js"></script>
+  <script type="text/javascript" src="wp-includes/js/jquery/ui/core.min_ver%3D1.11.4.js"></script>
+  <script type="text/javascript" src="wp-includes/js/jquery/ui/datepicker.min_ver%3D1.11.4.js"></script>
+  <script type="text/javascript"
+    src="wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min_ver%3D5.1.1.js"></script>
+  <script type="text/javascript"
+    src="wp-content/plugins/nd-shortcodes/shortcodes/custom/countdown/js/countdown_ver%3D5.2.2.js"></script>
+
+
+</body>
+
+</html>
